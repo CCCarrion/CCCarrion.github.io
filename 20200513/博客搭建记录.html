@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/Site_Assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Site_Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Site_Assets/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/Site_Assets/favicon/safari-pinned-tab.svg" color="#222">
+  <meta name="google-site-verification" content="lwLR2xPT2oXktmIF3rD_aXmyEoloPzGururLg1tlizg">
+  <meta name="msvalidate.01" content="CDBE5795F5A25C97765DFD9BFFDE1D5F">
+  <meta name="yandex-verification" content="c3662b6ec711e94f">
+  <meta name="baidu-site-verification" content="ltJ7yNDAKP">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":true,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="前言 这篇文章是本人对搭建这个博客记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建记录">
+<meta property="og:url" content="https://carrion.cc/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html">
+<meta property="og:site_name" content="Carrion&#39;s Blog">
+<meta property="og:description" content="前言 这篇文章是本人对搭建这个博客记录。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-12T20:26:27.000Z">
+<meta property="article:modified_time" content="2021-01-31T06:58:14.473Z">
+<meta property="article:author" content="Carrion">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://carrion.cc/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+<title>博客搭建记录 | Carrion's Blog</title>
+  
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-165315238-1',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c4c6869b2a303ca7b56b222d55c8e68e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Carrion's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Go Carrion!</p>
+      <img class="custom-logo-image" src="/Site_Assets/favicon/head.png" alt="Carrion's Blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">创建Github仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="nav-number">1.2.</span> <span class="nav-text">自定义域名</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexonext-%E6%96%B9%E6%A1%88%E9%83%A8%E7%BD%B2"><span class="nav-number">2.</span> <span class="nav-text">Hexo+NexT 方案部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2hexo"><span class="nav-number">2.0.1.</span> <span class="nav-text">部署hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">NexT主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.1.1.</span> <span class="nav-text">准备步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BD%BF%E7%94%A8next"><span class="nav-number">2.1.2.</span> <span class="nav-text">设置使用NexT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">基础设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#deploy"><span class="nav-number">2.2.1.</span> <span class="nav-text">Deploy</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%8E%A8%E9%80%81"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">设置推送</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="nav-number">2.2.1.2.</span> <span class="nav-text">自定义域名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2"><span class="nav-number">2.2.1.3.</span> <span class="nav-text">自动部署</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE"><span class="nav-number">2.2.2.</span> <span class="nav-text">自定义配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#next%E9%85%8D%E7%BD%AE"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">NexT配置</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AD%94%E6%94%B9%E7%BE%8E%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">魔改美化</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Carrion"
+      src="/Site_Assets/avatar.gif">
+  <p class="site-author-name" itemprop="name">Carrion</p>
+  <div class="site-description" itemprop="description">只争朝夕 不负时光</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://carrion.cc/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Site_Assets/avatar.gif">
+      <meta itemprop="name" content="Carrion">
+      <meta itemprop="description" content="只争朝夕 不负时光">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carrion's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客搭建记录
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-05-13 04:26:27" itemprop="dateCreated datePublished" datetime="2020-05-13T04:26:27+08:00">2020-05-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-01-31 14:58:14" itemprop="dateModified" datetime="2021-01-31T14:58:14+08:00">2021-01-31</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Blog/" itemprop="url" rel="index"><span itemprop="name">Blog</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline: </span>
+  
+    <a title="waline" href="/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html" data-xid="/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>6.3k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>6 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="前言">前言</h1>
+<p>这篇文章是本人对搭建这个博客记录。 <a id="more"></a><br />
+# Github Page 设置</p>
+<h2 id="创建github仓库">创建Github仓库</h2>
+<p>在github上新建一个仓库，在 yourgithubname 下命名为 <code>yourgithubname.github.io</code>，比如我这个博客就设置为<code>CCCarrion.github.io</code>，我的github用户名就是<code>CCCarrion</code>，我的仓库地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NDQ2Fycmlvbi9DQ0NhcnJpb24uZ2l0aHViLmlv">https://github.com/CCCarrion/CCCarrion.github.io<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>此时你如果在仓库中上传了静态网页，通过<code>yourgithubname.github.io</code>就可以访问页面了。 理论上说，我们的博客已经搭建完成了！</p>
+<h2 id="自定义域名">自定义域名</h2>
+<p>如果想要更高点逼格，访问网址想要设置成自己的域名，也是可以的！</p>
+<ul>
+<li><p>首先，先申请一个自己的域名 比如本站就是<code>carrion.cc</code>.然后就是设置解析，将域名解析到博客服务器去。</p></li>
+<li><p>在dns服务添加2个记录，一个是A记录，一个是CNAME记录。 A记录，记录值可以通过本地ping一下<code>yourgithubname.github.io</code>得到的ip地址。 CNAME记录，记录值就是<code>yourgithubname.github.io</code>。</p></li>
+<li><p>在跳转后希望浏览器网址显示的也是自己的域名，在<code>yourgithubname.github.io</code>的github仓库页面，找到setting/option下面的custom domain栏填入你的域名即可。</p></li>
+</ul>
+<h1 id="hexonext-方案部署">Hexo+NexT 方案部署</h1>
+<p>上一步，我们把基础设置解决了（服务器+网址解析），这一步我们需要填充博客框架了。 这里，我选择的是hexo。其原理是一套静态页面的编译系统，我们写好的文章，通过hexo编译生成静态页面部署到github page上，也就是我们 <code>yourgithubname.github.io</code>的仓库里，这样我们就可以通过访问之前绑定的域名看到我们的博客文章了。 ## Hexo ### 准备步骤 创建一个Private的代码仓库用于存放文章和hexo工程，为了和博客页面仓库区别，我称之为 <strong>BlogBackup</strong> 仓库。</p>
+<p>安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=">Git<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnLw==">node js<i class="fa fa-external-link-alt"></i></span></p>
+<p>完成上述步骤，在任意地方右键打开gitbash，输入代码安装hexo环境</p>
+<pre><code>npm install hexo-cli -g</code></pre>
+<h3 id="部署hexo">部署hexo</h3>
+<p>然后在其他地方创建一个空文件夹。 在这个目录下，打开gitbash,</p>
+<pre><code>hexo init</code></pre>
+<p>进行hexo工程的初始化。此时我们已经搭建好hexo的工程啦~</p>
+<p>我们可以试试</p>
+<pre><code>hexo s</code></pre>
+<p>然后在浏览器里输入 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==">http://localhost:4000/<i class="fa fa-external-link-alt"></i></span> ,就能本地预览hexo生成的博客页面啦~</p>
+<p>最后，将hexo工程关联上传到 <strong>BlogBackup</strong> 仓库。</p>
+<pre><code>git init 
+git remote add origin [你的仓库地址]
+git add .
+git commit -m &#39;hexo init&#39;
+git push -u origin master</code></pre>
+<p>Git相关的指令的话，可以下载安装 Sourcetree 界面操作，这里就不展开说了。</p>
+<h2 id="next主题">NexT主题</h2>
+<p>hexo的默认博客界面有点太丑了，但是没有关系，我们可以选择主题啊！</p>
+<p>反复参考后，我选择了NexT主题，因为功能强大，更新及时，而且还应好看，还有一个重要的是，用的人多，改主题做美化教程多呀~</p>
+<h3 id="准备步骤">准备步骤</h3>
+<p>安装theme一般有两种方式：</p>
+<div class="tabs" id="next-install-，2"><ul class="nav-tabs"><li class="tab active"><a href="#next-install-，2-1">插件形式</a></li><li class="tab"><a href="#next-install-，2-2">git模式</a></li></ul><div class="tab-content"><div class="tab-pane active" id="next-install-，2-1"><p>gitbash输入</p>
+<pre><code>npm i hexo-theme-next</code></pre></div><div class="tab-pane" id="next-install-，2-2"><p>gitbash输入</p>
+<pre><code>git clone https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next</code></pre></div></div></div>
+<p>因为git模式会将next的全部代码文件放置于themes/next下，方便我们后续的魔改，所以我选择了git模式。</p>
+<p>因为我想跟着官方更新又想魔改的东西保留，所以这里我fork了NexT官方仓库作，将自己fork的仓库作为git地址。</p>
+<ul>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0">https://github.com/next-theme/hexo-theme-next<i class="fa fa-external-link-alt"></i></span> fork一下。</p></li>
+<li><p>将fork的仓库设置成hexo工程git的submodule：</p>
+<p>git submodule add -b [分支名称] --name [子模块名称] [子模块git地址] themes/next</p></li>
+</ul>
+<h3 id="设置使用next">设置使用NexT</h3>
+<p>打开hexo工程下 _config.yml 文件 ，找到</p>
+<pre><code>theme: landscape</code></pre>
+<p>改成</p>
+<pre><code>theme: next</code></pre>
+<p>此时，我们就可以在预览一下网站，发现网页外观样式都大变样啦！ 至此，我们已经把hexo+NexT的工程环境搭建完毕了~虽然只是最基础默认的，剩下就是配置一下我们的个人信息和推送设置之类的了。</p>
+<h2 id="基础设置">基础设置</h2>
+<h3 id="deploy">Deploy</h3>
+<h4 id="设置推送">设置推送</h4>
+<p>刚才我们建立了博客页面的托管仓库和生成博客页面的hexo工程。那接下我们要做的就是把hexo生成的页面部署到仓库里。</p>
+<p>一般来说，hexo 工程下执行</p>
+<pre><code>hexo g</code></pre>
+<p>就会在工程下生成 public 文件夹，把这个文件夹下的所有内容 覆盖 到 <code>yourgithubname.github.io</code> 仓库就行了。</p>
+<p>每次手动操作好像比较麻烦，其实一个指令就可以代劳完成这个步骤。</p>
+<ul>
+<li><p>安装插件</p>
+<pre><code>  npm install hexo-deployer-git --save</code></pre></li>
+<li><p>配置 _config.yml 文件</p>
+<pre><code>  deploy:
+    type: git
+    repo: https://github.com/&lt;username&gt;/&lt;project&gt; [ `yourgithubname.github.io` 仓库地址]
+    # example, https://github.com/CarrionBlog/CCCarrion.github.io.git
+    branch: master</code></pre></li>
+<li><p>部署指令</p>
+<pre><code>  hexo clean &amp;&amp; hexo deploy</code></pre></li>
+</ul>
+<p>此时可以登录<code>yourgithubname.github.io</code>域名查看页面部署结果了。</p>
+<div class="note primary"><h4 id="自定义域名">自定义域名</h4>
+<p>此时会发现之前设置的自定义域名失效了，之前在仓库也变空了，不要慌，现在我们就来解决这个问题。 在之前setting/option下面的custom domain设置时候，其实github会在仓库里添加一个CNAME的文件，文件其实就是一个写着你自定义域名的文本而已。 因为我们 hexo deploy 指令每次都是将生成的页面覆盖上传，所以这个文件就没了。解决办法就是让hexo生成的时候自带这个文件：</p>
+<ul>
+<li>在hexo/source目录下，新建一个文件，重命名为无拓展名的 CNAME</li>
+<li>以记事本方式打开 CNAME 文件，写下你自定义的域名，保存关闭。</li>
+</ul>
+<p>source目录下的文件，除了几个特殊的目录外，其他都会在生成的时候直接拷贝进public，就正好达成了我们的目的。</p>
+</div>
+<h4 id="自动部署">自动部署</h4>
+<p>还有一种更自动化生成推送的方法，就是 GitHub Action。 这种方法，不需要我们手动部署，只要我们提交更新hexo工程，就会自动部署。 如何配置，可以参看<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtYTExYmxhY2svaGV4by1hY3Rpb24=">https://github.com/sma11black/hexo-action<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="自定义配置">自定义配置</h3>
+<p>Hexo和NexT均提供了很多配置选项供我们配置达到自定义外观和信息。 #### Hexo配置 在Hexo工程目录下，打开 _config.yml 可以提供配置的选项都在这里面。 Hexo中主要是对博客的个人信息和文章链接等进行设置，选项也比较少。这里我就不一一介绍了，详情可以看<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv">Hexo文档<i class="fa fa-external-link-alt"></i></span>.</p>
+<h4 id="next配置">NexT配置</h4>
+<p>本篇记录是基于Hexo 5.0进行的博客搭建，所以针对NexT的设置也是采用最新的方式。</p>
+<p>在工程目录下，新建一个文件命名为_config.[name].yml,其中name是你所使用的theme的名字，这里我用的NexT主题，所以我命名为_config.next.yml. 然后打开themes/next/_config.yml,针对需要改动的配置，复制到新建的_config.next.yml. 在生成的时候，Hexo会将_config.next.yml中的配置覆盖主题源文件中的默认配置。 <div class="note primary"><p>这里我不建议直接全部复制再改，因为这样可以更方便看到自己做的哪些修改。</p>
+</div></p>
+<p>选择配置上还是基本参考官网给的描述进行设置，一般不会出错。这里我就基本列一下我所使用到的修改地方：</p>
+<ul>
+<li><p>主题设置为 Gemini</p>
+<pre><code>  scheme: Gemini</code></pre></li>
+<li><p>打开黑暗模式</p>
+<pre><code>  darkmode: true</code></pre></li>
+<li><p>设置网页标签小图标</p>
+<p>在Hexo/Source目录里新建一个文件夹，起名Site_Assets.然后放入自己想要的图片（可以到<span class="exturl" data-url="aHR0cHM6Ly9yZWFsZmF2aWNvbmdlbmVyYXRvci5uZXQv">Favicon Generator<i class="fa fa-external-link-alt"></i></span>预览生成适用格式）。 这里假设我的图片是mylogo.png</p>
+<pre><code>  favicon:
+    small: /Site_Assets/mylogo.png
+    medium: /Site_Assets/mylogo.png
+    apple_touch_icon: /Site_Assets/mylogo.png
+    safari_pinned_tab: /Site_Assets/mylogo.png</code></pre></li>
+<li><p>头像同上</p>
+<pre><code>  custom_logo: /Site_Assets/head.png</code></pre></li>
+<li><p>创作协议</p>
+<p>在文章底部和侧边栏显示协议。</p>
+<pre><code>  creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: true
+    language: deed.zh </code></pre></li>
+<li><p>侧边栏菜单配置</p>
+<p>home主页和archives文章归档是默认生成的，不需要自行制作页面（当然也可以设置为自定义页面）。其他需要自行生成页面配置。</p>
+<ul>
+<li><p>Tags</p>
+<p>在Hexo目录下，执行代码</p>
+<pre><code>  hexo new page tags</code></pre>
+<p>会生成hexo.md文件，打开文件将type改成 tags 。 使用NexT的Tagscloud，可以找到相关设置修改</p>
+<pre><code>  tagcloud:
+    min: 12 # Minimun font size in px
+    max: 30 # Maxium font size in px
+    amount: 200 # Total amount of tags
+    orderby: name # Order of tags
+    order: 1 # Sort order</code></pre></li>
+<li><p>Categories</p>
+<p>分类目录页面，生成方式同上。</p></li>
+<li><p>404页面</p>
+<p>顺便一提，可以自定义404页面，我这里改成公益页面。</p>
+<pre><code>  hexo new page 404</code></pre>
+<p>打开source\404.md，改写成：</p>
+<pre><code>  ---
+  title: &#39;404&#39;
+  date: 2014-12-22 12:39:04
+  comments: false
+  ---
+  &lt;script src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot;
+          charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot; homePageName=&quot;Back to home&quot;&gt;
+  &lt;/script&gt;</code></pre></li>
+</ul>
+<p>最终Menu我设置如下</p>
+<pre><code>  menu:
+    home: / || fa fa-home
+    #about: /about/ || fa fa-user
+    tags: /tags/ || fa fa-tags
+    categories: /categories/ || fa fa-th
+    archives: /archives/ || fa fa-archive
+    #schedule: /schedule/ || fa fa-calendar
+    #sitemap: /sitemap.xml || fa fa-sitemap
+    #commonweal: /404/ || fa fa-heartbeat</code></pre></li>
+<li><p>侧边栏外观设置</p>
+<p>没什么好说的，按照文档自行设置。</p></li>
+<li><p>底部信息</p>
+<p>同上，根据文档说明设置即可。</p></li>
+<li><p>文章相关设置</p>
+<ul>
+<li><p>摘要</p>
+<p>在正文部分，写下 <code>&lt;!-- more --&gt;</code> ，在这个标记之前的文本将会作为摘要显示。</p></li>
+<li><p>字数统计</p>
+<p>安装插件</p>
+<pre><code>  npm install hexo-word-counter</code></pre>
+<p>增加设置项：</p>
+<pre><code>  symbols_count_time:
+    symbols: true
+    time: true
+    total_symbols: true
+    total_time: false
+    awl: 4
+    wpm: 275
+
+    separated_meta: true
+    item_text_total: true    </code></pre></li>
+<li><p>相关文章推荐</p>
+<p>安装插件</p>
+<pre><code>   npm install hexo-related-popular-posts</code></pre>
+<p>添加设置（只设置了开启，其他自行设置）</p>
+<pre><code>  related_posts:
+    enable: true</code></pre></li>
+<li><p>文章中代码显示设置</p>
+<p>根据喜好设置显示代码外观，可以到<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9oaWdobGlnaHQv">https://theme-next.js.org/highlight/<i class="fa fa-external-link-alt"></i></span>预览选择喜欢的样式</p>
+<pre><code>  codeblock:
+    # Code Highlight theme
+    # All available themes: https://theme-next.js.org/highlight/
+    theme:
+      light: default
+      dark: tomorrow-night
+    prism:
+      light: prism
+      dark: prism-dark
+    # Add copy button on codeblock
+    copy_button:
+      enable: true
+      # Available values: default | flat | mac
+      style: mac</code></pre></li>
+<li><p>回到顶部按钮和底部进度条</p>
+<pre><code>  back2top:
+    enable: true
+    # Back to top in sidebar.
+    sidebar: true
+    # Scroll percent label in b2t button.
+    scrollpercent: true
+
+  # Reading progress bar
+  reading_progress:
+    enable: true
+    # Available values: top | bottom
+    position: bottom
+    color: &quot;#37c6c0&quot;
+    height: 3px    </code></pre></li>
+<li><p>自定义字体</p>
+<p>根据文档选择喜欢的字体。<br />
+</p></li>
+</ul></li>
+<li><p>SEO</p>
+<p>这块部分用于优化搜索引擎，具体的完全参照文档操作，这里不重复说明了。</p></li>
+<li><p>插件配置</p>
+<ul>
+<li><p>Math公式</p>
+<p>选用MathJax。</p>
+<pre><code>  # Math Equation
+  math:
+    # Default (false) will load mathjax / katex script on demand.
+    # That is it only render those page which has `mathjax: true` in front-matter.
+    # If you set it to true, it will load mathjax / katex srcipt EVERY PAGE.
+    every_page: false
+
+    mathjax:
+      enable: true
+      # Available values: none | ams | all
+      tags: none
+
+    katex:
+      enable: false
+      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+      copy_tex: false</code></pre></li>
+</ul>
+<p>因为hexo-renderer-marked实现的LaTex与MarkDown有语法冲突，这里改成用hexo-renderer-pandoc：</p>
+<pre><code>      $ npm un hexo-renderer-marked
+      $ npm i hexo-renderer-pandoc</code></pre>
+<p>使用公式的语法，参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL21hdGgtZXF1YXRpb25zLmh0bWw=">https://theme-next.js.org/docs/third-party-services/math-equations.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>使用公式的时候，不要忘记在文章front matter部分加上</p>
+<pre><code>      mathjax: true</code></pre>
+<ul>
+<li><p>评论系统</p>
+<p>个人是希望可以自己持有留言数据和邮件通知。目前没有一个比较好的免费方案。这里我就使用了LiveRe和gitchat。</p>
+<p>详情参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL2NvbW1lbnRzLmh0bWw=">https://theme-next.js.org/docs/third-party-services/comments.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>增加waline。参考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xpemhlbWluZy93YWxpbmUvdHJlZS9tYXN0ZXIvcGFja2FnZXMvaGV4by1uZXh0">安装<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnLw==">教程<i class="fa fa-external-link-alt"></i></span></p></li>
+<li></li>
+</ul></li>
+</ul>
+<h1 id="魔改美化">魔改美化</h1>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Carrion
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://carrion.cc/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html" title="博客搭建记录">https://carrion.cc/20200513/博客搭建记录.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/20210130/hello-world.html" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      <div class="comment-button-group">
+          <a class="btn comment-button waline">waline</a>
+          <a class="btn comment-button gitalk">gitalk</a>
+          <a class="btn comment-button livere">livere</a>
+      </div>
+        <div class="comment-position waline">
+          <div class="comments" id="waline-comments"></div>
+        </div>
+        <div class="comment-position gitalk">
+          <div class="comments gitalk-container"></div>
+        </div>
+        <div class="comment-position livere">
+          <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC80OTk0My8yNjQzNA=="></div>
+        </div>
+      <script>
+        (function() {
+          const commentButton = document.querySelectorAll('.comment-button');
+            commentButton.forEach(element => {
+            const commentClass = element.classList[2];
+            element.addEventListener('click', () => {
+              commentButton.forEach(active => active.classList.toggle('active', active === element));
+              document.querySelectorAll('.comment-position').forEach(active => active.classList.toggle('active', active.classList.contains(commentClass)));
+              if (CONFIG.comments.storage) {
+                localStorage.setItem('comments_active', commentClass);
+              }
+            });
+          });
+          let { activeClass } = CONFIG.comments;
+          if (CONFIG.comments.storage) {
+            activeClass = localStorage.getItem('comments_active') || activeClass;
+          }
+          if (activeClass) {
+            const activeButton = document.querySelector(`.comment-button.${activeClass}`);
+            if (activeButton) {
+              activeButton.click();
+            }
+          }
+        })();
+      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Carrion</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Symbols count total: </span>
+    <span title="Symbols count total">7k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">6 mins.</span>
+  </span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ebad5ad7a86d2f6" async="async"></script>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+<script>
+NexT.utils.loadComments('#waline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
+    new Waline(Object.assign({
+      lang: 'en'
+    }, {"enable":true,"serverURL":"https://carrionblog.vercel.app/","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
+      el: '#waline-comments',
+      path: "/20200513/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.html",
+    }));
+  }, window.Waline);
+});
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '225d92ba1215991aee70',
+      clientSecret: 'ebece39c0c6a6308f58f270fed911e508125f608',
+      repo        : 'CCCarrion.github.io',
+      owner       : 'CCCarrion',
+      admin       : ['CCCarrion'],
+      id          : '626bd0d328e71faaafc272d08bd4fec1',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "20200513/博客搭建记录.html"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
+</body>
+</html>
