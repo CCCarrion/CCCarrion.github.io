@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/Site_Assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Site_Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Site_Assets/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/Site_Assets/favicon/safari-pinned-tab.svg" color="#222">
+  <meta name="google-site-verification" content="lwLR2xPT2oXktmIF3rD_aXmyEoloPzGururLg1tlizg">
+  <meta name="msvalidate.01" content="CDBE5795F5A25C97765DFD9BFFDE1D5F">
+  <meta name="yandex-verification" content="c3662b6ec711e94f">
+  <meta name="baidu-site-verification" content="ltJ7yNDAKP">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":true,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="介绍编写博客文章的一下语法和设置。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客写作语法备忘">
+<meta property="og:url" content="https://carrion.cc/20200513/b6944eae35d7">
+<meta property="og:site_name" content="Carrion&#39;s Blog">
+<meta property="og:description" content="介绍编写博客文章的一下语法和设置。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg">
+<meta property="og:image" content="https://carrion.cc/Site_Assets/favicon/favicon-32x32.png">
+<meta property="og:image" content="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg">
+<meta property="article:published_time" content="2020-05-12T20:29:18.000Z">
+<meta property="article:modified_time" content="2021-02-02T15:03:05.243Z">
+<meta property="article:author" content="Carrion">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg">
+
+
+<link rel="canonical" href="https://carrion.cc/20200513/b6944eae35d7.html">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+<title>博客写作语法备忘 | Carrion's Blog</title>
+  
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-165315238-1',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c4c6869b2a303ca7b56b222d55c8e68e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Carrion's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Go Carrion!</p>
+      <img class="custom-logo-image" src="/Site_Assets/favicon/head.png" alt="Carrion's Blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-books"><a href="/books" rel="section"><i class="fas fa-book-reader fa-fw"></i>books</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">创建文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#front-matter"><span class="nav-number">2.</span> <span class="nav-text">Front-Matter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">3.1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">3.2.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">3.3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">3.4.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%9C%E4%BD%93%E5%8A%A0%E7%B2%97%E5%92%8C%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">3.5.</span> <span class="nav-text">斜体、加粗和删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="nav-number">3.6.</span> <span class="nav-text">反斜杠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5"><span class="nav-number">3.7.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">3.8.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5"><span class="nav-number">3.9.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">3.10.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%92%E6%A0%87"><span class="nav-number">3.11.</span> <span class="nav-text">角标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6%E8%AF%AD%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">标签插件语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E5%9D%97"><span class="nav-number">4.1.</span> <span class="nav-text">引用块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97-1"><span class="nav-number">4.2.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#include-code"><span class="nav-number">4.3.</span> <span class="nav-text">Include Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5-1"><span class="nav-number">4.4.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87-1"><span class="nav-number">4.5.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%86%E9%A2%91"><span class="nav-number">4.6.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iframe"><span class="nav-number">4.7.</span> <span class="nav-text">iframe</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pdf"><span class="nav-number">4.8.</span> <span class="nav-text">PDF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E6%96%87%E7%AB%A0"><span class="nav-number">4.9.</span> <span class="nav-text">引用文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%BA%95%E8%89%B2"><span class="nav-number">4.10.</span> <span class="nav-text">文字底色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="nav-number">4.11.</span> <span class="nav-text">提示框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tabs"><span class="nav-number">4.12.</span> <span class="nav-text">Tabs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">4.13.</span> <span class="nav-text">按钮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E8%A1%A8"><span class="nav-number">4.14.</span> <span class="nav-text">图表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="nav-number">4.15.</span> <span class="nav-text">数学公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emoji"><span class="nav-number">4.16.</span> <span class="nav-text">Emoji</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Carrion"
+      src="/Site_Assets/avatar.gif">
+  <p class="site-author-name" itemprop="name">Carrion</p>
+  <div class="site-description" itemprop="description">只争朝夕 不负时光</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+  
+  
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://carrion.cc/20200513/b6944eae35d7">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Site_Assets/avatar.gif">
+      <meta itemprop="name" content="Carrion">
+      <meta itemprop="description" content="只争朝夕 不负时光">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carrion's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客写作语法备忘
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-05-13 04:29:18" itemprop="dateCreated datePublished" datetime="2020-05-13T04:29:18+08:00">2020-05-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-02 23:03:05" itemprop="dateModified" datetime="2021-02-02T23:03:05+08:00">2021-02-02</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">博客相关</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline: </span>
+  
+    <a title="waline" href="/20200513/b6944eae35d7#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/20200513/b6944eae35d7" data-xid="/20200513/b6944eae35d7" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>7.9k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>7 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>介绍编写博客文章的一下语法和设置。 <a id="more"></a></p>
+<h1 id="创建文章">创建文章</h1>
+<p>在博客工程目录下打开gitbash，使用命令行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; [-P Path]</span><br><span class="line"></span><br><span class="line">-p, --path     Post path. Customize the path of the post.Related Path in data&#x2F;_post.</span><br><span class="line">-r, --replace  Replace the current post if existed.</span><br><span class="line">-s, --slug     Post slug. Customize the URL of the post.</span><br></pre></td></tr></table></figure>
+<p>再找到文件，使用顺手的编辑器打开，根据喜好进行配置然后开始编写吧~</p>
+<h1 id="front-matter">Front-Matter</h1>
+<p>这是每篇文章处于第一个---上方的设置项，一般采用代码生成Post文件时候会作为模板自带。</p>
+<p>layout: 选择这个文章的类型渲染模板，默认为post title: 文章标题 description: 文章底下的文字说明 date: 文章创建时间 自动生成 updated: 文章更新时间，不需要手动设置 tags: 设置标签<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> categories: 设置分类,写法与tags类似 abbrlink： 为了绝对链接生成的固定短码，在第一次发布文章的时候自动生成，一般不改动 comments: 评论是否开启 默认为true mathjax: 是否开启支持公式渲染 默认为true type: 设置page布局时候的类型,page/tags/404/categories等，一般不需要配置 reward_settings: enable: true comment: Donate comment here.</p>
+<p>还有部分详细参考<a href="docs/theme-settings/front-matter.html">toc/reward/quicklink</a></p>
+<p><code>&lt;!-- more --&gt;</code></p>
+<p>在这个标识之上的将会显示在文章列表的文章标题下。可以插入图片。</p>
+<h1 id="基本语法">基本语法</h1>
+<h2 id="标题">标题</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">​</span><br><span class="line">This is an H2</span><br><span class="line">-------------</span><br></pre></td></tr></table></figure>
+<p>这种写法只支持2级标题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 这是 H1 #</span><br><span class="line">​</span><br><span class="line">##  这是 H2 ## </span><br><span class="line">​</span><br><span class="line">## # 这是 H3 ## #</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 这是 H1</span><br><span class="line">​</span><br><span class="line">##  这是 H2</span><br><span class="line">​</span><br><span class="line">## ## ##  这是 H6</span><br></pre></td></tr></table></figure>
+<p>一般推荐最后一种写法。</p>
+<h2 id="引用">引用</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 这是引用</span><br></pre></td></tr></table></figure>
+<p>渲染结果：</p>
+<blockquote>
+<p>这是引用</p>
+</blockquote>
+<p>还可以嵌套(自身和其他语法标签)： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; Layer1</span><br><span class="line">&gt;&gt; Layer2 </span><br><span class="line">&gt;&gt;&gt; layer3</span><br></pre></td></tr></table></figure> &gt; Layer1 &gt;&gt; Layer2 &gt;&gt;&gt; layer3</p>
+<h2 id="列表">列表</h2>
+<p><strong>无序列表</strong>,其中*,-,+是等效的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*   Red</span><br><span class="line">+   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure>
+<p>渲染结果： &gt; * Red &gt; + Green &gt; - Blue</p>
+<p><strong>有序列表</strong>,使用数字加一个. 其中数字不需要严格排序，MD会自动排序（建议序号还是从1.开始）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. Jax</span><br><span class="line">2. Wang</span><br><span class="line">3. Bird</span><br><span class="line">1. McHale</span><br><span class="line">8. Parish	</span><br></pre></td></tr></table></figure>
+<p>渲染结果： &gt; 1. Jax &gt; 2. Wang &gt; 3. Bird &gt; 1. McHale &gt; 8. Parish</p>
+<p>同样，排序也支持嵌套，需要缩进4个空格或者一个tab(同样能嵌套其他语法)： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. ListLayer1</span><br><span class="line">	1. Layer1_Sub1</span><br><span class="line">	1. Layer1_Sub2</span><br><span class="line">1. ListLayer2	</span><br></pre></td></tr></table></figure> 渲染结果： &gt; 1. ListLayer1 &gt; 1. Layer1_Sub1 &gt; 1. Layer1_Sub2 &gt; 1. ListLayer2</p>
+<h2 id="分割线">分割线</h2>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line">​</span><br><span class="line">***</span><br><span class="line">​</span><br><span class="line">*****</span><br><span class="line">​</span><br><span class="line">- - -</span><br><span class="line">​</span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure> 渲染结果（去除最后一种，会导致和标题写法混淆）： * * <em> </em><strong> </strong>*** - - -</p>
+<h2 id="斜体加粗和删除线">斜体、加粗和删除线</h2>
+<p>用一个*和_包围的文字将会造成 <em>斜体</em> 效果,使用2个的时候造成 <strong>加粗</strong> 效果，如果想输出*和_,可以留空或者加: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_斜体_	__加粗__		显示下划线 _ 	显示星号\*</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <em>斜体</em> <strong>加粗</strong> 显示下划线 _ 显示星号*</p>
+<p>使用2个~对文本进行包围可以实现删除线效果: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删掉了~~  没有删掉</span><br></pre></td></tr></table></figure> 渲染效果: &gt; <del>删掉了</del> 没有删掉</p>
+<h2 id="反斜杠">反斜杠</h2>
+<p>MD中很多符号被用于语法使用，如果我们只是想显示出这些符号，我们可以在符号前面加上。支持以下符号：</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">符号</th>
+<th style="text-align: center;">写法</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>\</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>`</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>*</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>_</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>[]</strong></td>
+<td style="text-align: center;">\ [ \ ]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>{}</strong></td>
+<td style="text-align: center;">同上</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>()</strong></td>
+<td style="text-align: center;">同上</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>#</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>+</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>-</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>.</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>!</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="链接">链接</h2>
+<ul>
+<li><p><strong>行内式</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[显示文本](网址 &quot;放置显示文本&quot;) </span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">显示链接[Google](http:&#x2F;&#x2F;google.com&#x2F; &quot;谷歌&quot;) </span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+<p>示例渲染结果：</p>
+<blockquote>
+<p>显示链接<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote></li>
+<li><p><strong>参考式</strong>:</p>
+<p>参考式分两部分组成，一部分是写在文本行内，另一部分是在任意地方写好详细地址说明等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">放在正文中：</span><br><span class="line">[显示文本][索引标签]</span><br><span class="line"></span><br><span class="line">放在任意处：</span><br><span class="line">[索引标签]: 网址 &quot;Title&quot;&#x2F;(Title)</span><br><span class="line"></span><br><span class="line">索引标签如果为空,第二个[]不可省略，并且解释处索引标签使用显示文本的内容。</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">有3个搜索引擎，分别是[Google][1],[Bing][ms]和[百度][]。</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+<p>渲染结果：</p>
+<blockquote>
+<p>有3个搜索引擎，分别是<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>,<span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span>。</p>
+</blockquote>
+<p>网址支持相对路径和本页索引：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[相对](&#x2F;docs&#x2F;) </span><br><span class="line">[跳转](#反斜杠)</span><br></pre></td></tr></table></figure>
+<p>渲染结果： &gt; <a href="/docs/">相对</a> &gt; <a href="#反斜杠">跳转</a></p></li>
+</ul>
+<h2 id="图片">图片</h2>
+<p>图片和链接格式类似,而且也有__行内式__和__参考式__两种:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">![文本](网址 &quot;title&quot;) </span><br><span class="line"></span><br><span class="line">![文本][索引标签]</span><br><span class="line">[索引标签]: 网址 &quot;title&quot;</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">这是一个网络图片 ![网络图片](http:&#x2F;&#x2F;img02.tooopen.com&#x2F;images&#x2F;20160509&#x2F;tooopen_sy_161967094653.jpg)</span><br><span class="line"></span><br><span class="line">这是本网站图片 ![皮卡丘][PikaQ]</span><br><span class="line">[PiKaQ]: &#x2F;assets&#x2F;timg.jfif &quot;皮卡丘Pika&quot;</span><br></pre></td></tr></table></figure>
+<p>渲染结果: &gt; 这是一个网络图片 <img data-src="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg" title="AAA" alt="网络图片" /></p>
+<blockquote>
+<p>这是本网站图片 [皮卡丘][PikaQ] [PiKaQ]: /assets/timg.jfif</p>
+</blockquote>
+<p>目前这种方式不支持图片显示大小自定义.</p>
+<p>点击图片跳转: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[![AAA](&#x2F;assets&#x2F;pikaQ.png)](#反斜杠)</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <a href="#反斜杠"><img data-src="/Site_Assets/favicon/favicon-32x32.png" alt="AAA" /></a></p>
+<h2 id="自动链接">自动链接</h2>
+<p>直接在网址/邮箱用&lt;&gt;包围,一般用于邮箱: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;Google.com&#x2F;&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">http://Google.com/<i class="fa fa-external-link-alt"></i></span> &gt; <span class="exturl" data-url="bWFpbHRvOmFkZHJlc3NAZXhhbXBsZS5jb20=">address@example.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>主要用于邮箱,因为上面这个邮箱地址在网页源码中会是</p>
+<pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; </code></pre>
+<p>一定程度上避免程序读取然后发垃圾邮件给你.</p>
+<h2 id="代码块">代码块</h2>
+<p>与当前块对齐后缩进4个空格或者一个Tab: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(Tab&#x2F;blankSpace*4)CodeLine1</span><br><span class="line">(Tab&#x2F;blankSpace*4)CodeLine2</span><br><span class="line"></span><br><span class="line">(Tab&#x2F;blankSpace*4)CodeLine3</span><br></pre></td></tr></table></figure> 渲染结果: &gt; CodeLine1 &gt; CodeLine2 &gt; &gt; CodeLine3</p>
+<p>前一种样式功能简单,所以一般采用```在前后包围的方式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">单个词语时候比如: &#96;__加粗&#96;</span><br><span class="line"></span><br><span class="line">&#96;&#96;单行&#96;时候&#96;&#96;</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;</span><br><span class="line">很多</span><br><span class="line">行的</span><br><span class="line">时候</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+<p>渲染结果:</p>
+<blockquote>
+<p>单个词语时候比如: <code>__加粗</code></p>
+</blockquote>
+<blockquote>
+<p><code>单行`时候</code></p>
+</blockquote>
+<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">很多</span><br><span class="line">行的</span><br><span class="line">时候</span><br></pre></td></tr></table></figure>
+<p>如果包围内容包含<code>`</code>时候,之后前后包围的连续<code>`</code>个数大于中间会出现的连续<code>`</code>个数即可.2个以上<code>`</code>包围的多行code才会显示代码框.</p>
+</blockquote>
+<p>在3个<code>`</code>的情况下,可以设置语言种类高亮等:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96; [language] [title] [url] [link text] </span><br><span class="line">code snippet </span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;json json http:&#x2F;&#x2F;Google.com&#x2F; Google</span><br><span class="line">&#123;</span><br><span class="line">  &quot;firstName&quot;: &quot;John&quot;,</span><br><span class="line">  &quot;lastName&quot;: &quot;Smith&quot;,</span><br><span class="line">  &quot;age&quot;: 25</span><br><span class="line">&#125;</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+<p>渲染结果: &gt; <figure class="highlight json"><figcaption><span>json</span><span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> ## 表格</p>
+<p>可以通过制表符按一定格式编写数据,自动生成表格: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">| Title0    	| title1 		|</span><br><span class="line">| 对齐设置 	    | 对齐设置 	    |</span><br><span class="line">| Data0	    	| Data1 		|</span><br><span class="line">| Data0	    	| Data1  		|</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">| Syntax      | Description | SubDesc	 |</span><br><span class="line">| :---------- | :---------: | ---------: |</span><br><span class="line">| *Header*    | _Title_     | &#96;Title&#96;    |</span><br><span class="line">| [Google][1] | [Bing][ms]  | [百度][]	 |</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br></pre></td></tr></table></figure> 渲染结果:</p>
+<blockquote>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Syntax</th>
+<th style="text-align: center;">Description</th>
+<th style="text-align: right;">SubDesc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Header</em></td>
+<td style="text-align: center;"><strong>Title</strong></td>
+<td style="text-align: right;"><code>Title</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></td>
+<td style="text-align: center;"><span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span></td>
+<td style="text-align: right;"><span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>嫌太麻烦?可以去<span class="exturl" data-url="aHR0cHM6Ly93d3cudGFibGVzZ2VuZXJhdG9yLmNvbS9tYXJrZG93bl90YWJsZXM=">Markdown Tables Generator<i class="fa fa-external-link-alt"></i></span>生成然后复制进文章.</p>
+<h2 id="角标">角标</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[^标识]</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">角标示例,角标[^1]和角标[^aa]</span><br><span class="line">[^1]: 第一个</span><br><span class="line">[^aa]: 第二个</span><br></pre></td></tr></table></figure>
+<p>渲染结果: &gt; 角标示例,角标[^1]和角标[^aa] [^1]: 第一个 [^aa]: 第二个</p>
+<h1 id="标签插件语法">标签插件语法</h1>
+<p>标签插件是hexo或者next主题或者自己安装的标签插件所提供的,可能有些与基础md的功能重复,但是一般更强大.</p>
+<h2 id="引用块">引用块</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line"></span><br><span class="line">content</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<p>别名: <strong>quote</strong></p>
+<p>示例: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote Seth Godin http:&#x2F;&#x2F;sethgodin.typepad.com&#x2F;seths_blog&#x2F;2009&#x2F;07&#x2F;welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line"></span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure> <blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><span class="exturl" data-url="aHR0cDovL3NldGhnb2Rpbi50eXBlcGFkLmNvbS9zZXRoc19ibG9nLzIwMDkvMDcvd2VsY29tZS10by1pc2xhbmQtbWFya2V0aW5nLmh0bWw=">Welcome to Island Marketing<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote></p>
+<h2 id="代码块-1">代码块</h2>
+<pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;    
+	code snippet    
+	&#123;% endcodeblock %&#125;</code></pre>
+<p>别名: <strong>code</strong></p>
+<p>示例:</p>
+<pre><code>&#123;% codeblock _.compact lang:JavaScript http://underscorejs.org/#compact Underscore.js %&#125;
+	_.compact([0, 1, false, 2, '', 3]);
+	=> [1, 2, 3]
+	&#123;% endcodeblock %&#125;</code></pre>
+<blockquote>
+<figure class="highlight javascript"><figcaption><span>_.compact</span><span class="exturl" data-url="aHR0cDovL3VuZGVyc2NvcmVqcy5vcmcvI2NvbXBhY3Q=">Underscore.js<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">&#x27;&#x27;</span>, <span class="number">3</span>]);  </span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  </span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>对于额外选项,</p>
+<table>
+<thead>
+<tr class="header">
+<th>可选项</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>line_number</td>
+<td>显示行数</td>
+<td>true</td>
+</tr>
+<tr class="even">
+<td>highlight</td>
+<td>显示高亮</td>
+<td>true</td>
+</tr>
+<tr class="odd">
+<td>first_line</td>
+<td>行数起始</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>mark</td>
+<td>指定那几行特殊标识<br>比如 3,4-7,8 代表第3行,第4到7行和第八行</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h2 id="include-code">Include Code</h2>
+<p>插入 source/downloads/code 文件夹内的代码文件。source/downloads/code 不是固定的，取决于你在配置文件中 code_dir 的配置。</p>
+<pre><code>&#123;% include_code [title] [lang:language] [from:line] [to:line] path/to/file %&#125;</code></pre>
+<h2 id="链接-1">链接</h2>
+<pre><code>&#123;% link text url [external] [title] %&#125;  
+示例:  
+&#123;% link Google http://google.com %&#125;</code></pre>
+<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>
+<h2 id="图片-1">图片</h2>
+<p>可以指定大小.</p>
+<pre><code>&#123;% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %&#125;
+示例:
+&#123;% img http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg 50 80 '"title text" "alt text"' %&#125;</code></pre>
+<img data-src="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg" class="" width="50" height="80" title="title text" alt="alt text">
+<h2 id="视频">视频</h2>
+<p>插入 Youtube 视频</p>
+<pre><code>&#123;% youtube video_id %&#125;</code></pre>
+<p>常规视频插入</p>
+<pre><code>&#123;% video url %&#125;</code></pre>
+<p>acfun等:</p>
+<pre><code>直接复制给的视频代码 粘贴即可.(iframe代码)</code></pre>
+<h2 id="iframe">iframe</h2>
+<pre><code>&#123;% iframe url [width] [height] %&#125;</code></pre>
+<h2 id="pdf">PDF</h2>
+<pre><code>% pdf url [height] %&#125;
+
+[height] : Optional. Height of the PDF display element, e.g. 800px.</code></pre>
+<h2 id="引用文章">引用文章</h2>
+<p>可以引用本博客的其他文章.</p>
+<pre><code>&#123;% post_path filename %&#125;
+&#123;% post_link filename [title] [escape] %&#125;
+
+示例:
+&#123;% post_path 博客搭建记录 %&#125;
+&#123;% post_link 博客搭建记录  '<b>博客搭建</b>' %&#125;
+&#123;% post_link 博客搭建记录  '<b>博客搭建</b>' false %&#125;</code></pre>
+/20200513/19f003c35042.html
+<p><br> <a href="/20200513/19f003c35042.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;">&lt;b&gt;博客搭建&lt;&#x2F;b&gt;</a> <br> <a href="/20200513/19f003c35042.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;"><b>博客搭建</b></a></p>
+<h2 id="文字底色">文字底色</h2>
+<pre><code>&#123;% label [class]@Text %&#125;
+class可选:default | primary | success | info | warning | danger</code></pre>
+<p>示例:</p>
+<pre><code>&#123;% label @none %&#125; &#123;% label default@default %&#125; &#123;% label primary@primary %&#125; &#123;% label success@success %&#125; &#123;% label info@info %&#125; &#123;% label warning@warning %&#125; &#123;% label danger@danger %&#125;</code></pre>
+<mark class="label ">none</mark>
+<mark class="label default">default</mark>
+<mark class="label primary">primary</mark>
+<mark class="label success">success</mark>
+<mark class="label info">info</mark>
+<mark class="label warning">warning</mark>
+<mark class="label danger">danger</mark>
+<h2 id="提示框">提示框</h2>
+<pre><code>&#123;% note [class] [no-icon] %&#125;
+	Any content (support inline tags too.io).
+	&#123;% endnote %&#125;
+
+class可选:default | primary | success | info | warning | danger
+no-icon: 加了这个标识就不显示图标</code></pre>
+<p>示例:</p>
+<pre><code>&#123;% note primary no-icon %&#125;
+	**Welcome** to [Carrion\'s Hell](https://carrion.cc)
+	&#123;% endnote %&#125;</code></pre>
+<div class="note primary no-icon"><p><strong>Welcome</strong> to <a href="https://carrion.cc">Carrion's Hell</a></p>
+</div>
+<h2 id="tabs">Tabs</h2>
+<p>参考<a href="/docs/tag-plugins/tabs.html">Tabs</a></p>
+<h2 id="按钮">按钮</h2>
+<p>参考<a href="/docs/tag-plugins/button.html">Button</a></p>
+<h2 id="图表">图表</h2>
+<p>参考<span class="exturl" data-url="aHR0cHM6Ly9lY2hhcnRzLmFwYWNoZS5vcmcvZXhhbXBsZXMvaW5kZXguaHRtbA==">官方<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="数学公式">数学公式</h2>
+<p>使用的是Mathjax。 参考<a href="/docs/third-party-services/math-equations">标签用法</a>.参考<span class="exturl" data-url="aHR0cHM6Ly93d3cuenlidWx1by5jb20va25pZ2h0L25vdGUvOTYwOTM=">公式写法<i class="fa fa-external-link-alt"></i></span> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;equation&#125; \label&#123;eq1&#125;</span><br><span class="line">e&#x3D;mc^2</span><br><span class="line">\end&#123;equation&#125;$$</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <span class="math display">\[\begin{equation} \label{eq1}
+&gt; e=mc^2
+&gt; \end{equation}\]</span></p>
+<h2 id="emoji">Emoji</h2>
+<p>在文章中::中间写入emoji名称,即可显示,同时也支持标签形式.<span class="exturl" data-url="aHR0cHM6Ly93d3cud2ViZnguY29tL3Rvb2xzL2Vtb2ppLWNoZWF0LXNoZWV0Lw==">Emojis列表参考<i class="fa fa-external-link-alt"></i></span></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:heartpulse: :smile: :black_nib: </span><br><span class="line">&#123;% github_emoji heartpulse %&#125;&#123;% github_emoji smile %&#125;&#123;% github_emoji black_nib %&#125;</span><br></pre></td></tr></table></figure>
+<p>渲染结果:</p>
+<div class="note warning no-icon"><p>存在bug,等待解决.</p>
+</div>
+<p>后续将会继续更新...</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>如下： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure> 此外还有：<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\20200513\19f003c35042.html" rel="bookmark">博客搭建记录</a></div>
+    </li>
+  </ul>
+
+
+    <footer class="post-footer"><!-- 文件位置：~/source/_data/post-body-end.swig -->
+<div>
+    
+        <div class="end-slogan" style="text-align:center;font-size:13px;letter-spacing:10px;user-select:none;color:#bbb;"><br/>本文结束啦<i class="fa fa-star"></i>感谢您阅读<br/><br/></div>
+    
+</div> 
+
+<!-- 文件位置：~/source/_data/post-body-end.swig -->
+<div style="text-align: center"><span id="jrsc" >正在加载今日诗词....</span></div>
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Carrion
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://carrion.cc/20200513/b6944eae35d7" title="博客写作语法备忘">https://carrion.cc/20200513/b6944eae35d7</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+          </div>
+
+        
+	<div class="addthis_inline_share_toolbox" style="text-align: right;">
+	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ebad5ad7a86d2f6" async="async"></script>
+	</div>	
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/20200513/19f003c35042" rel="prev" title="博客搭建记录">
+                  <i class="fa fa-chevron-left"></i> 博客搭建记录
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/20210130/9c2c32788b14" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      <div class="comment-button-group">
+          <a class="btn comment-button waline">waline</a>
+          <a class="btn comment-button gitalk">gitalk</a>
+          <a class="btn comment-button livere">livere</a>
+      </div>
+        <div class="comment-position waline">
+          <div class="comments" id="waline-comments"></div>
+        </div>
+        <div class="comment-position gitalk">
+          <div class="comments gitalk-container"></div>
+        </div>
+        <div class="comment-position livere">
+          <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC80OTk0My8yNjQzNA=="></div>
+        </div>
+      <script>
+        (function() {
+          const commentButton = document.querySelectorAll('.comment-button');
+            commentButton.forEach(element => {
+            const commentClass = element.classList[2];
+            element.addEventListener('click', () => {
+              commentButton.forEach(active => active.classList.toggle('active', active === element));
+              document.querySelectorAll('.comment-position').forEach(active => active.classList.toggle('active', active.classList.contains(commentClass)));
+              if (CONFIG.comments.storage) {
+                localStorage.setItem('comments_active', commentClass);
+              }
+            });
+          });
+          let { activeClass } = CONFIG.comments;
+          if (CONFIG.comments.storage) {
+            activeClass = localStorage.getItem('comments_active') || activeClass;
+          }
+          if (activeClass) {
+            const activeButton = document.querySelector(`.comment-button.${activeClass}`);
+            if (activeButton) {
+              activeButton.click();
+            }
+          }
+        })();
+      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Carrion</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">43k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">39 mins.</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  </div>
+<div id="binft"></div>
+  <script>
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = "",
+      o = ["青青陵上柏，磊磊涧中石。", "人生天地间，忽如远行客。","斗酒相娱乐，聊厚不为薄。", "驱车策驽马，游戏宛与洛。","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+      return r + ""
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+      c = {
+        text: "",
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: "forward",
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById('binft'));
+  </script>
+
+
+<!-- CarrionWeather -->
+<script type="text/javascript">
+WIDGET = {FID: 'qkirnDlRXw'}
+</script>
+<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://carrion.cc/20200513/b6944eae35d7.html',]
+      });
+      });
+  </script>
+<script>
+NexT.utils.loadComments('#waline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
+    new Waline(Object.assign({
+      lang: 'en'
+    }, {"enable":true,"serverURL":"https://carrionblog.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
+      el: '#waline-comments',
+      path: "/20200513/b6944eae35d7",
+    }));
+  }, window.Waline);
+});
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '225d92ba1215991aee70',
+      clientSecret: 'ebece39c0c6a6308f58f270fed911e508125f608',
+      repo        : 'CCCarrion.github.io',
+      owner       : 'CCCarrion',
+      admin       : ['CCCarrion'],
+      id          : 'b517f82bea5e2ed0d1b109a66419a696',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "20200513/b6944eae35d7.html"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+<!-- 文件位置：~/source/_data/body-end.swig -->
+<script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+<script>
+  console.log('今日诗词 - 开始加载...');
+  jinrishici.load((result) => {
+    let jrsc = document.getElementById('jrsc');
+    if (jrsc) {
+      console.log('今日诗词 - 标签获取成功.');
+    } else {
+      console.log('今日诗词 - 标签获取失败!');
+      return;
+    }
+    const data = result.data;
+    let author = data.origin.author;
+    let title = '《' + data.origin.title + '》';
+    let content = data.content.substr(0, data.content.length - 1);
+    let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
+    jrsc.innerText = content + ' @ ' + dynasty + '·' + author + title;
+    console.log('今日诗词 - 载入完毕.');
+    if (data.origin.author == '李白') {
+      let audio = document.createElement("audio");
+      audio.src = "/ding.mp3";
+      audio.play();
+    }
+  });
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.5,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":200,"height":500,"position":"left","hOffset":40,"vOffset":-150},"mobile":{"show":false,"scale":0.5},"react":{"opacity":0.9,"opacityDefault":0.7,"opacityOnHover":0.7},"dialog":{"enable":true,"hitokoto":true},"log":false});</script></body>
+</html>
