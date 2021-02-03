@@ -590,20 +590,6 @@ for (var i = 0; i < firstpages.length; i++) {
   </span>
   <span class="author" itemprop="copyrightHolder">Carrion</span>
 </div>
-<div class="wordcount">
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-line"></i>
-    </span>
-    <span title="Symbols count total">43k</span>
-  </span>
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">39 mins.</span>
-  </span>
-</div>
 <div class="busuanzi-count">
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
@@ -734,7 +720,7 @@ NexT.utils.loadComments('#waline-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
     new Waline(Object.assign({
       lang: 'en'
-    }, {"enable":true,"serverURL":"https://carrionblog-g0z5f2k31.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
+    }, {"enable":true,"serverURL":"https://carrionblog.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
       el: '#waline-comments',
       path: "/games/",
     }));
@@ -784,5 +770,15 @@ NexT.utils.loadComments('#waline-comments', () => {
   });
 </script>
 
+
+
+if(window.location.hash){
+    var checkExist = setInterval(function() {
+       if ($(window.location.hash).length) {
+          $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+          clearInterval(checkExist);
+       }
+    }, 100);
+}
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.5,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":200,"height":500,"position":"left","hOffset":40,"vOffset":-150},"mobile":{"show":false,"scale":0.5},"react":{"opacity":0.9,"opacityDefault":0.7,"opacityOnHover":0.7},"dialog":{"enable":true,"hitokoto":true},"log":false});</script></body>
 </html>
