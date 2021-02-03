@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/20210130/9c2c32788b14.html</url>
-    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <tags>
-        <tag>博客Test</tag>
-        <tag>博客Test1</tag>
-        <tag>博客Test2</tag>
-        <tag>博客Test34</tag>
-        <tag>博客Test5</tag>
-        <tag>博客Test8</tag>
-        <tag>博客Test9</tag>
-        <tag>博客Test4356</tag>
-        <tag>博客Test7857</tag>
-        <tag>博客Test474</tag>
-        <tag>博客Test845</tag>
-        <tag>博客Test484</tag>
-        <tag>博客Test89</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客写作语法备忘</title>
-    <url>/20200513/b6944eae35d7.html</url>
+    <url>/20210201/7a023ac39f7f.html</url>
     <content><![CDATA[<p>介绍编写博客文章的一下语法和设置。 <a id="more"></a></p>
 <h1 id="创建文章">创建文章</h1>
 <p>在博客工程目录下打开gitbash，使用命令行</p>
@@ -303,8 +269,8 @@
 &#123;% post_path 博客搭建记录 %&#125;
 &#123;% post_link 博客搭建记录  '<b>博客搭建</b>' %&#125;
 &#123;% post_link 博客搭建记录  '<b>博客搭建</b>' false %&#125;</code></pre>
-/20200513/19f003c35042.html
-<p><br> <a href="/20200513/19f003c35042.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;">&lt;b&gt;博客搭建&lt;&#x2F;b&gt;</a> <br> <a href="/20200513/19f003c35042.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;"><b>博客搭建</b></a></p>
+/20210201/85bc1840d3ea.html
+<p><br> <a href="/20210201/85bc1840d3ea.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;">&lt;b&gt;博客搭建&lt;&#x2F;b&gt;</a> <br> <a href="/20210201/85bc1840d3ea.html" title="&lt;b&gt;博客搭建&lt;&#x2F;b&gt;"><b>博客搭建</b></a></p>
 <h2 id="文字底色">文字底色</h2>
 <pre><code>&#123;% label [class]@Text %&#125;
 class可选:default | primary | success | info | warning | danger</code></pre>
@@ -355,7 +321,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 </section>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>Blog</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -363,7 +329,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
   </entry>
   <entry>
     <title>博客搭建记录</title>
-    <url>/20200513/19f003c35042.html</url>
+    <url>/20210201/85bc1840d3ea.html</url>
     <content><![CDATA[<h1 id="前言">前言</h1>
 <p>这篇文章是本人对搭建这个博客记录。 <a id="more"></a></p>
 <h1 id="github-page-设置">Github Page 设置</h1>
