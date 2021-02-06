@@ -6,28 +6,24 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.3.0">
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/Site_Assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/Site_Assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/Site_Assets/favicon/favicon-16x16.png">
   <link rel="mask-icon" href="/Site_Assets/favicon/safari-pinned-tab.svg" color="#222">
-  <meta name="google-site-verification" content="lwLR2xPT2oXktmIF3rD_aXmyEoloPzGururLg1tlizg">
-  <meta name="msvalidate.01" content="CDBE5795F5A25C97765DFD9BFFDE1D5F">
-  <meta name="yandex-verification" content="c3662b6ec711e94f">
-  <meta name="baidu-site-verification" content="ltJ7yNDAKP">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
-  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":true,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="前言 这篇文章是本人对搭建这个博客记录。">
 <meta property="og:type" content="article">
@@ -57,32 +53,7 @@
 </script>
 <title>博客搭建记录 | Carrion's Blog</title>
   
-    <script>
-      function sendPageView() {
-        if (CONFIG.hostname !== location.hostname) return;
-        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
-        localStorage.setItem('uid', uid);
-        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
-          v  : 1,
-          tid: 'UA-165315238-1',
-          cid: uid,
-          t  : 'pageview',
-          dp : encodeURIComponent(location.pathname)
-        }));
-      }
-      document.addEventListener('pjax:complete', sendPageView);
-      sendPageView();
-    </script>
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?c4c6869b2a303ca7b56b222d55c8e68e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -255,7 +226,7 @@
   </nav>
 </div>
   <div class="cc-license site-overview-item animated" itemprop="license">
-    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -275,7 +246,6 @@
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -389,7 +359,7 @@
 <p>这篇文章是本人对搭建这个博客记录。 <a id="more"></a></p>
 <h1 id="github-page-设置">Github Page 设置</h1>
 <h2 id="创建github仓库">创建Github仓库</h2>
-<p>在github上新建一个仓库，在 yourgithubname 下命名为 <code>yourgithubname.github.io</code>，比如我这个博客就设置为<code>CCCarrion.github.io</code>，我的github用户名就是<code>CCCarrion</code>，我的仓库地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NDQ2Fycmlvbi9DQ0NhcnJpb24uZ2l0aHViLmlv">https://github.com/CCCarrion/CCCarrion.github.io<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>在github上新建一个仓库，在 yourgithubname 下命名为 <code>yourgithubname.github.io</code>，比如我这个博客就设置为<code>CCCarrion.github.io</code>，我的github用户名就是<code>CCCarrion</code>，我的仓库地址 <a target="_blank" rel="noopener" href="https://github.com/CCCarrion/CCCarrion.github.io" class="uri">https://github.com/CCCarrion/CCCarrion.github.io</a>。</p>
 <p>此时你如果在仓库中上传了静态网页，通过<code>yourgithubname.github.io</code>就可以访问页面了。 理论上说，我们的博客已经搭建完成了！</p>
 <h2 id="自定义域名">自定义域名</h2>
 <p>如果想要更高点逼格，访问网址想要设置成自己的域名，也是可以的！</p>
@@ -403,7 +373,7 @@
 <h2 id="hexo">Hexo</h2>
 <h3 id="准备步骤">准备步骤</h3>
 <p>创建一个Private的代码仓库用于存放文章和hexo工程，为了和博客页面仓库区别，我称之为 <strong>BlogBackup</strong> 仓库。</p>
-<p>安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=">Git<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnLw==">node js<i class="fa fa-external-link-alt"></i></span></p>
+<p>安装<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>和<a target="_blank" rel="noopener" href="https://nodejs.org/">node js</a></p>
 <p>完成上述步骤，在任意地方右键打开gitbash，输入代码安装hexo环境</p>
 <pre><code>npm install hexo-cli -g</code></pre>
 <h3 id="部署hexo">部署hexo</h3>
@@ -412,7 +382,7 @@
 <p>进行hexo工程的初始化。此时我们已经搭建好hexo的工程啦~</p>
 <p>我们可以试试</p>
 <pre><code>hexo s</code></pre>
-<p>然后在浏览器里输入 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==">http://localhost:4000/<i class="fa fa-external-link-alt"></i></span> ,就能本地预览hexo生成的博客页面啦~</p>
+<p>然后在浏览器里输入 <a target="_blank" rel="noopener" href="http://localhost:4000/" class="uri">http://localhost:4000/</a> ,就能本地预览hexo生成的博客页面啦~</p>
 <p>最后，将hexo工程关联上传到 <strong>BlogBackup</strong> 仓库。</p>
 <pre><code>git init 
 git remote add origin [你的仓库地址]
@@ -431,7 +401,7 @@ git push -u origin master</code></pre>
 <p>因为git模式会将next的全部代码文件放置于themes/next下，方便我们后续的魔改，所以我选择了git模式。</p>
 <p>因为我想跟着官方更新又想魔改的东西保留，所以这里我fork了NexT官方仓库作，将自己fork的仓库作为git地址。</p>
 <ul>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0">https://github.com/next-theme/hexo-theme-next<i class="fa fa-external-link-alt"></i></span> fork一下。</p></li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next" class="uri">https://github.com/next-theme/hexo-theme-next</a> fork一下。</p></li>
 <li><p>将fork的仓库设置成hexo工程git的submodule：</p>
 <p>git submodule add -b [分支名称] --name [子模块名称] [子模块git地址] themes/next</p></li>
 </ul>
@@ -471,11 +441,11 @@ git push -u origin master</code></pre>
 <p>source目录下的文件，除了几个特殊的目录外，其他都会在生成的时候直接拷贝进public，就正好达成了我们的目的。</p>
 </div>
 <h4 id="自动部署">自动部署</h4>
-<p>还有一种更自动化生成推送的方法，就是 GitHub Action。 这种方法，不需要我们手动部署，只要我们提交更新hexo工程，就会自动部署。 如何配置，可以参看<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtYTExYmxhY2svaGV4by1hY3Rpb24=">https://github.com/sma11black/hexo-action<i class="fa fa-external-link-alt"></i></span></p>
+<p>还有一种更自动化生成推送的方法，就是 GitHub Action。 这种方法，不需要我们手动部署，只要我们提交更新hexo工程，就会自动部署。 如何配置，可以参看<a target="_blank" rel="noopener" href="https://github.com/sma11black/hexo-action" class="uri">https://github.com/sma11black/hexo-action</a></p>
 <h3 id="自定义配置">自定义配置</h3>
 <p>Hexo和NexT均提供了很多配置选项供我们配置达到自定义外观和信息。</p>
 <h4 id="hexo配置">Hexo配置</h4>
-<p>在Hexo工程目录下，打开 _config.yml 可以提供配置的选项都在这里面。 Hexo中主要是对博客的个人信息和文章链接等进行设置，选项也比较少。这里我就不一一介绍了，详情可以看<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv">Hexo文档<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>在Hexo工程目录下，打开 _config.yml 可以提供配置的选项都在这里面。 Hexo中主要是对博客的个人信息和文章链接等进行设置，选项也比较少。这里我就不一一介绍了，详情可以看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a>.</p>
 <h4 id="next配置">NexT配置</h4>
 <p>本篇记录是基于Hexo 5.0进行的博客搭建，所以针对NexT的设置也是采用最新的方式。</p>
 <p>在工程目录下，新建一个文件命名为_config.[name].yml,其中name是你所使用的theme的名字，这里我用的NexT主题，所以我命名为_config.next.yml. 然后打开themes/next/_config.yml,针对需要改动的配置，复制到新建的_config.next.yml. 在生成的时候，Hexo会将_config.next.yml中的配置覆盖主题源文件中的默认配置。 <div class="note primary"><p>这里我不建议直接全部复制再改，因为这样可以更方便看到自己做的哪些修改。</p>
@@ -487,7 +457,7 @@ git push -u origin master</code></pre>
 <li><p>打开黑暗模式</p>
 <pre><code>  darkmode: true</code></pre></li>
 <li><p>设置网页标签小图标</p>
-<p>在Hexo/Source目录里新建一个文件夹，起名Site_Assets.然后放入自己想要的图片（可以到<span class="exturl" data-url="aHR0cHM6Ly9yZWFsZmF2aWNvbmdlbmVyYXRvci5uZXQv">Favicon Generator<i class="fa fa-external-link-alt"></i></span>预览生成适用格式）。 这里假设我的图片是mylogo.png</p>
+<p>在Hexo/Source目录里新建一个文件夹，起名Site_Assets.然后放入自己想要的图片（可以到<a target="_blank" rel="noopener" href="https://realfavicongenerator.net/">Favicon Generator</a>预览生成适用格式）。 这里假设我的图片是mylogo.png</p>
 <pre><code>  favicon:
     small: /Site_Assets/mylogo.png
     medium: /Site_Assets/mylogo.png
@@ -569,7 +539,7 @@ git push -u origin master</code></pre>
 <pre><code>  related_posts:
     enable: true</code></pre></li>
 <li><p>文章中代码显示设置</p>
-<p>根据喜好设置显示代码外观，可以到<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9oaWdobGlnaHQv">https://theme-next.js.org/highlight/<i class="fa fa-external-link-alt"></i></span>预览选择喜欢的样式</p>
+<p>根据喜好设置显示代码外观，可以到<a target="_blank" rel="noopener" href="https://theme-next.js.org/highlight/" class="uri">https://theme-next.js.org/highlight/</a>预览选择喜欢的样式</p>
 <pre><code>  codeblock:
     # Code Highlight theme
     # All available themes: https://theme-next.js.org/highlight/
@@ -629,14 +599,14 @@ git push -u origin master</code></pre>
 <p>因为hexo-renderer-marked实现的LaTex与MarkDown有语法冲突，这里改成用hexo-renderer-pandoc：</p>
 <pre><code>      $ npm un hexo-renderer-marked
       $ npm i hexo-renderer-pandoc</code></pre>
-<p>使用公式的语法，参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL21hdGgtZXF1YXRpb25zLmh0bWw=">https://theme-next.js.org/docs/third-party-services/math-equations.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>使用公式的语法，参考<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/math-equations.html" class="uri">https://theme-next.js.org/docs/third-party-services/math-equations.html</a></p>
 <p>使用公式的时候，不要忘记在文章front matter部分加上</p>
 <pre><code>      mathjax: true</code></pre>
 <ul>
 <li><p>评论系统</p>
 <p>个人是希望可以自己持有留言数据和邮件通知。目前没有一个比较好的免费方案。这里我就使用了LiveRe和gitchat。</p>
-<p>详情参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL2NvbW1lbnRzLmh0bWw=">https://theme-next.js.org/docs/third-party-services/comments.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>增加waline。参考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xpemhlbWluZy93YWxpbmUvdHJlZS9tYXN0ZXIvcGFja2FnZXMvaGV4by1uZXh0">安装<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnLw==">教程<i class="fa fa-external-link-alt"></i></span></p></li>
+<p>详情参考<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/comments.html" class="uri">https://theme-next.js.org/docs/third-party-services/comments.html</a></p>
+<p>增加waline。参考<a target="_blank" rel="noopener" href="https://github.com/lizheming/waline/tree/master/packages/hexo-next">安装</a>和<a target="_blank" rel="noopener" href="https://waline.js.org/">教程</a></p></li>
 <li><p>访客计数</p>
 <p><figure class="highlight yml"><figcaption><span>yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br></pre></td></tr></table></figure></p></li>
 <li><p>搜索</p></li>
@@ -650,7 +620,7 @@ git push -u origin master</code></pre>
 <p>我开启了 Pjax，lazyload，pangu 和 quicklink。</p></li>
 </ul></li>
 <li><p>Tag语法</p>
-<p>相关的写法和设置参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RhZy1wbHVnaW5zLw==">https://theme-next.js.org/docs/tag-plugins/<i class="fa fa-external-link-alt"></i></span></p></li>
+<p>相关的写法和设置参考<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/tag-plugins/" class="uri">https://theme-next.js.org/docs/tag-plugins/</a></p></li>
 </ul>
 <h1 id="魔改美化">魔改美化</h1>
 <p>对于Hexo和Next自带的设置暂告一段落了。我发现博客还是有点丑哎。所以这里我记录一下我在Next可提供的设置外做的一些改动。</p>
@@ -741,7 +711,7 @@ git push -u origin master</code></pre>
 <p>安装插件</p>
 <pre><code>npm install hexo-douban --save</code></pre>
 <p>在主题配置文件设置 <figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">douban:</span></span><br><span class="line">  <span class="attr">user:</span> <span class="string">mythsman</span></span><br><span class="line">  <span class="attr">builtin:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">book:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my book title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my book quote&#x27;</span></span><br><span class="line">  <span class="attr">movie:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my movie title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my movie quote&#x27;</span></span><br><span class="line">  <span class="attr">game:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my game title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my game quote&#x27;</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL215dGhzbWFuL2hleG8tZG91YmFu">详查<i class="fa fa-external-link-alt"></i></span></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/mythsman/hexo-douban">详查</a></p>
 
     </div>
 
@@ -778,7 +748,7 @@ git push -u origin master</code></pre>
       <a href="https://carrion.cc/20210201/85bc1840d3ea" title="博客搭建记录">https://carrion.cc/20210201/85bc1840d3ea</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
   </li>
 </ul>
 </div>
@@ -903,7 +873,7 @@ git push -u origin master</code></pre>
       </span>
     </span>
 </div>
-  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 <div id="binft"></div>
   <script>
@@ -959,10 +929,10 @@ WIDGET = {FID: 'qkirnDlRXw'}
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 <script src="/js/local-search.js"></script>
@@ -1019,7 +989,7 @@ WIDGET = {FID: 'qkirnDlRXw'}
       }
     };
     const script = document.createElement('script');
-    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
     script.defer = true;
     document.head.appendChild(script);
   } else {
@@ -1031,33 +1001,23 @@ WIDGET = {FID: 'qkirnDlRXw'}
 </script>
 
 
-  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
-  <script>
-      window.addEventListener('load', () => {
-      quicklink.listen({
-        timeout : 3000,
-        priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://carrion.cc/20210201/85bc1840d3ea.html',]
-      });
-      });
-  </script>
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
     new Waline(Object.assign({
       lang: 'en'
-    }, {"enable":true,"serverURL":"https://carrionblog.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
+    }, {"enable":true,"serverURL":"https://carion-blog-comment.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
       el: '#waline-comments',
       path: "/20210201/85bc1840d3ea",
     }));
   }, window.Waline);
 });
 </script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
 
 <script>
 NexT.utils.loadComments('.gitalk-container', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
     var gitalk = new Gitalk({
       clientID    : '225d92ba1215991aee70',
       clientSecret: 'ebece39c0c6a6308f58f270fed911e508125f608',
@@ -1065,7 +1025,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       owner       : 'CCCarrion',
       admin       : ['CCCarrion'],
       id          : 'eb08b19e4dd0a9d79c71d8abf08aacc0',
-        language: '',
+        language: 'zh-CN',
       distractionFreeMode: true
     });
     gitalk.render(document.querySelector('.gitalk-container'));

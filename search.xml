@@ -113,14 +113,14 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">[显示文本](网址 &quot;放置显示文本&quot;) </span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">显示链接[Google](http:&#x2F;&#x2F;google.com&#x2F; &quot;谷歌&quot;) </span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 <p>示例渲染结果：</p>
 <blockquote>
-<p>显示链接<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></p>
+<p>显示链接<a href="http://google.com/" title="谷歌">Google</a></p>
 </blockquote></li>
 <li><p><strong>参考式</strong>:</p>
 <p>参考式分两部分组成，一部分是写在文本行内，另一部分是在任意地方写好详细地址说明等。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">放在正文中：</span><br><span class="line">[显示文本][索引标签]</span><br><span class="line"></span><br><span class="line">放在任意处：</span><br><span class="line">[索引标签]: 网址 &quot;Title&quot;&#x2F;(Title)</span><br><span class="line"></span><br><span class="line">索引标签如果为空,第二个[]不可省略，并且解释处索引标签使用显示文本的内容。</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">有3个搜索引擎，分别是[Google][1],[Bing][ms]和[百度][]。</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 <p>渲染结果：</p>
 <blockquote>
-<p>有3个搜索引擎，分别是<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>,<span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>有3个搜索引擎，分别是<a href="http://google.com/" title="推荐">Google</a>,<a href="http://bing.com/" title="推荐">Bing</a>和<a href="http://baidu.com/" title="不推荐">百度</a>。</p>
 </blockquote>
 <p>网址支持相对路径和本页索引：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[相对](&#x2F;docs&#x2F;) </span><br><span class="line">[跳转](#反斜杠)</span><br></pre></td></tr></table></figure>
@@ -136,7 +136,7 @@
 <p>目前这种方式不支持图片显示大小自定义.</p>
 <p>点击图片跳转: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[![AAA](&#x2F;assets&#x2F;pikaQ.png)](#反斜杠)</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <a href="#反斜杠"><img data-src="/Site_Assets/favicon/favicon-32x32.png" alt="AAA" /></a></p>
 <h2 id="自动链接">自动链接</h2>
-<p>直接在网址/邮箱用&lt;&gt;包围,一般用于邮箱: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;Google.com&#x2F;&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">http://Google.com/<i class="fa fa-external-link-alt"></i></span> &gt; <span class="exturl" data-url="bWFpbHRvOmFkZHJlc3NAZXhhbXBsZS5jb20=">address@example.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>直接在网址/邮箱用&lt;&gt;包围,一般用于邮箱: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;Google.com&#x2F;&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <a href="http://Google.com/" class="uri">http://Google.com/</a> &gt; <a href="mailto:address@example.com" class="email">address@example.com</a></p>
 <p>主要用于邮箱,因为上面这个邮箱地址在网页源码中会是</p>
 <pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; </code></pre>
 <p>一定程度上避免程序读取然后发垃圾邮件给你.</p>
@@ -158,7 +158,7 @@
 <p>在3个<code>`</code>的情况下,可以设置语言种类高亮等:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96; [language] [title] [url] [link text] </span><br><span class="line">code snippet </span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96;json json http:&#x2F;&#x2F;Google.com&#x2F; Google</span><br><span class="line">&#123;</span><br><span class="line">  &quot;firstName&quot;: &quot;John&quot;,</span><br><span class="line">  &quot;lastName&quot;: &quot;Smith&quot;,</span><br><span class="line">  &quot;age&quot;: 25</span><br><span class="line">&#125;</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-<p>渲染结果: &gt; <figure class="highlight json"><figcaption><span>json</span><span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> ## 表格</p>
+<p>渲染结果: &gt; <figure class="highlight json"><figcaption><span>json</span><a href="http://Google.com/">Google</a></figcaption><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> ## 表格</p>
 <p>可以通过制表符按一定格式编写数据,自动生成表格: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| Title0    	| title1 		|</span><br><span class="line">| 对齐设置 	    | 对齐设置 	    |</span><br><span class="line">| Data0	    	| Data1 		|</span><br><span class="line">| Data0	    	| Data1  		|</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">| Syntax      | Description | SubDesc	 |</span><br><span class="line">| :---------- | :---------: | ---------: |</span><br><span class="line">| *Header*    | _Title_     | &#96;Title&#96;    |</span><br><span class="line">| [Google][1] | [Bing][ms]  | [百度][]	 |</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br></pre></td></tr></table></figure> 渲染结果:</p>
 <blockquote>
 <table>
@@ -176,14 +176,14 @@
 <td style="text-align: right;"><code>Title</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></td>
-<td style="text-align: center;"><span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span></td>
-<td style="text-align: right;"><span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span></td>
+<td style="text-align: left;"><a href="http://google.com/" title="推荐">Google</a></td>
+<td style="text-align: center;"><a href="http://bing.com/" title="推荐">Bing</a></td>
+<td style="text-align: right;"><a href="http://baidu.com/" title="不推荐">百度</a></td>
 </tr>
 </tbody>
 </table>
 </blockquote>
-<p>嫌太麻烦?可以去<span class="exturl" data-url="aHR0cHM6Ly93d3cudGFibGVzZ2VuZXJhdG9yLmNvbS9tYXJrZG93bl90YWJsZXM=">Markdown Tables Generator<i class="fa fa-external-link-alt"></i></span>生成然后复制进文章.</p>
+<p>嫌太麻烦?可以去<a href="https://www.tablesgenerator.com/markdown_tables">Markdown Tables Generator</a>生成然后复制进文章.</p>
 <h2 id="角标">角标</h2>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[^标识]</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">角标示例,角标[^1]和角标[^aa]</span><br><span class="line">[^1]: 第一个</span><br><span class="line">[^aa]: 第二个</span><br></pre></td></tr></table></figure>
 <p>渲染结果: &gt; 角标示例,角标[^1]和角标[^aa] [^1]: 第一个 [^aa]: 第二个</p>
@@ -193,7 +193,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line"></span><br><span class="line">content</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
 <p>别名: <strong>quote</strong></p>
 <p>示例: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote Seth Godin http:&#x2F;&#x2F;sethgodin.typepad.com&#x2F;seths_blog&#x2F;2009&#x2F;07&#x2F;welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line"></span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure> <blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><span class="exturl" data-url="aHR0cDovL3NldGhnb2Rpbi50eXBlcGFkLmNvbS9zZXRoc19ibG9nLzIwMDkvMDcvd2VsY29tZS10by1pc2xhbmQtbWFya2V0aW5nLmh0bWw=">Welcome to Island Marketing<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote></p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote></p>
 <h2 id="代码块-1">代码块</h2>
 <pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;    
 	code snippet    
@@ -205,7 +205,7 @@
 	=> [1, 2, 3]
 	&#123;% endcodeblock %&#125;</code></pre>
 <blockquote>
-<figure class="highlight javascript"><figcaption><span>_.compact</span><span class="exturl" data-url="aHR0cDovL3VuZGVyc2NvcmVqcy5vcmcvI2NvbXBhY3Q=">Underscore.js<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">&#x27;&#x27;</span>, <span class="number">3</span>]);  </span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  </span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">&#x27;&#x27;</span>, <span class="number">3</span>]);  </span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  </span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>对于额外选项,</p>
 <table>
@@ -246,7 +246,7 @@
 <pre><code>&#123;% link text url [external] [title] %&#125;  
 示例:  
 &#123;% link Google http://google.com %&#125;</code></pre>
-<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>
+<a href="http://google.com/" title="" target="">Google</a>
 <h2 id="图片-1">图片</h2>
 <p>可以指定大小.</p>
 <pre><code>&#123;% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %&#125;
@@ -307,13 +307,13 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 <h2 id="按钮">按钮</h2>
 <p>参考<a href="/docs/tag-plugins/button.html">Button</a></p>
 <h2 id="图表">图表</h2>
-<p>参考<span class="exturl" data-url="aHR0cHM6Ly9lY2hhcnRzLmFwYWNoZS5vcmcvZXhhbXBsZXMvaW5kZXguaHRtbA==">官方<i class="fa fa-external-link-alt"></i></span></p>
+<p>参考<a href="https://echarts.apache.org/examples/index.html">官方</a></p>
 <h2 id="数学公式">数学公式</h2>
-<p>使用的是Mathjax。 参考<a href="/docs/third-party-services/math-equations">标签用法</a>.参考<span class="exturl" data-url="aHR0cHM6Ly93d3cuenlidWx1by5jb20va25pZ2h0L25vdGUvOTYwOTM=">公式写法<i class="fa fa-external-link-alt"></i></span> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;equation&#125; \label&#123;eq1&#125;</span><br><span class="line">e&#x3D;mc^2</span><br><span class="line">\end&#123;equation&#125;$$</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <span class="math display">\[\begin{equation} \label{eq1}
+<p>使用的是Mathjax。 参考<a href="/docs/third-party-services/math-equations">标签用法</a>.参考<a href="https://www.zybuluo.com/knight/note/96093">公式写法</a> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;equation&#125; \label&#123;eq1&#125;</span><br><span class="line">e&#x3D;mc^2</span><br><span class="line">\end&#123;equation&#125;$$</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <span class="math display">\[\begin{equation} \label{eq1}
 &gt; e=mc^2
 &gt; \end{equation}\]</span></p>
 <h2 id="emoji">Emoji</h2>
-<p>在文章中::中间写入emoji名称,即可显示,同时也支持标签形式.<span class="exturl" data-url="aHR0cHM6Ly93d3cud2ViZnguY29tL3Rvb2xzL2Vtb2ppLWNoZWF0LXNoZWV0Lw==">Emojis列表参考<i class="fa fa-external-link-alt"></i></span></p>
+<p>在文章中::中间写入emoji名称,即可显示,同时也支持标签形式.<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">Emojis列表参考</a></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:heartpulse: :smile: :black_nib: </span><br><span class="line">&#123;% github_emoji heartpulse %&#125;&#123;% github_emoji smile %&#125;&#123;% github_emoji black_nib %&#125;</span><br></pre></td></tr></table></figure>
 <p>渲染结果:</p>
 <div class="note warning no-icon"><p>存在bug,等待解决.</p>
@@ -340,7 +340,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 <p>这篇文章是本人对搭建这个博客记录。 <a id="more"></a></p>
 <h1 id="github-page-设置">Github Page 设置</h1>
 <h2 id="创建github仓库">创建Github仓库</h2>
-<p>在github上新建一个仓库，在 yourgithubname 下命名为 <code>yourgithubname.github.io</code>，比如我这个博客就设置为<code>CCCarrion.github.io</code>，我的github用户名就是<code>CCCarrion</code>，我的仓库地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NDQ2Fycmlvbi9DQ0NhcnJpb24uZ2l0aHViLmlv">https://github.com/CCCarrion/CCCarrion.github.io<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>在github上新建一个仓库，在 yourgithubname 下命名为 <code>yourgithubname.github.io</code>，比如我这个博客就设置为<code>CCCarrion.github.io</code>，我的github用户名就是<code>CCCarrion</code>，我的仓库地址 <a href="https://github.com/CCCarrion/CCCarrion.github.io" class="uri">https://github.com/CCCarrion/CCCarrion.github.io</a>。</p>
 <p>此时你如果在仓库中上传了静态网页，通过<code>yourgithubname.github.io</code>就可以访问页面了。 理论上说，我们的博客已经搭建完成了！</p>
 <h2 id="自定义域名">自定义域名</h2>
 <p>如果想要更高点逼格，访问网址想要设置成自己的域名，也是可以的！</p>
@@ -354,7 +354,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 <h2 id="hexo">Hexo</h2>
 <h3 id="准备步骤">准备步骤</h3>
 <p>创建一个Private的代码仓库用于存放文章和hexo工程，为了和博客页面仓库区别，我称之为 <strong>BlogBackup</strong> 仓库。</p>
-<p>安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=">Git<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnLw==">node js<i class="fa fa-external-link-alt"></i></span></p>
+<p>安装<a href="https://git-scm.com/">Git</a>和<a href="https://nodejs.org/">node js</a></p>
 <p>完成上述步骤，在任意地方右键打开gitbash，输入代码安装hexo环境</p>
 <pre><code>npm install hexo-cli -g</code></pre>
 <h3 id="部署hexo">部署hexo</h3>
@@ -363,7 +363,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 <p>进行hexo工程的初始化。此时我们已经搭建好hexo的工程啦~</p>
 <p>我们可以试试</p>
 <pre><code>hexo s</code></pre>
-<p>然后在浏览器里输入 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==">http://localhost:4000/<i class="fa fa-external-link-alt"></i></span> ,就能本地预览hexo生成的博客页面啦~</p>
+<p>然后在浏览器里输入 <a href="http://localhost:4000/" class="uri">http://localhost:4000/</a> ,就能本地预览hexo生成的博客页面啦~</p>
 <p>最后，将hexo工程关联上传到 <strong>BlogBackup</strong> 仓库。</p>
 <pre><code>git init 
 git remote add origin [你的仓库地址]
@@ -382,7 +382,7 @@ git push -u origin master</code></pre>
 <p>因为git模式会将next的全部代码文件放置于themes/next下，方便我们后续的魔改，所以我选择了git模式。</p>
 <p>因为我想跟着官方更新又想魔改的东西保留，所以这里我fork了NexT官方仓库作，将自己fork的仓库作为git地址。</p>
 <ul>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0">https://github.com/next-theme/hexo-theme-next<i class="fa fa-external-link-alt"></i></span> fork一下。</p></li>
+<li><p><a href="https://github.com/next-theme/hexo-theme-next" class="uri">https://github.com/next-theme/hexo-theme-next</a> fork一下。</p></li>
 <li><p>将fork的仓库设置成hexo工程git的submodule：</p>
 <p>git submodule add -b [分支名称] --name [子模块名称] [子模块git地址] themes/next</p></li>
 </ul>
@@ -422,11 +422,11 @@ git push -u origin master</code></pre>
 <p>source目录下的文件，除了几个特殊的目录外，其他都会在生成的时候直接拷贝进public，就正好达成了我们的目的。</p>
 </div>
 <h4 id="自动部署">自动部署</h4>
-<p>还有一种更自动化生成推送的方法，就是 GitHub Action。 这种方法，不需要我们手动部署，只要我们提交更新hexo工程，就会自动部署。 如何配置，可以参看<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtYTExYmxhY2svaGV4by1hY3Rpb24=">https://github.com/sma11black/hexo-action<i class="fa fa-external-link-alt"></i></span></p>
+<p>还有一种更自动化生成推送的方法，就是 GitHub Action。 这种方法，不需要我们手动部署，只要我们提交更新hexo工程，就会自动部署。 如何配置，可以参看<a href="https://github.com/sma11black/hexo-action" class="uri">https://github.com/sma11black/hexo-action</a></p>
 <h3 id="自定义配置">自定义配置</h3>
 <p>Hexo和NexT均提供了很多配置选项供我们配置达到自定义外观和信息。</p>
 <h4 id="hexo配置">Hexo配置</h4>
-<p>在Hexo工程目录下，打开 _config.yml 可以提供配置的选项都在这里面。 Hexo中主要是对博客的个人信息和文章链接等进行设置，选项也比较少。这里我就不一一介绍了，详情可以看<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv">Hexo文档<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>在Hexo工程目录下，打开 _config.yml 可以提供配置的选项都在这里面。 Hexo中主要是对博客的个人信息和文章链接等进行设置，选项也比较少。这里我就不一一介绍了，详情可以看<a href="https://hexo.io/zh-cn/docs/">Hexo文档</a>.</p>
 <h4 id="next配置">NexT配置</h4>
 <p>本篇记录是基于Hexo 5.0进行的博客搭建，所以针对NexT的设置也是采用最新的方式。</p>
 <p>在工程目录下，新建一个文件命名为_config.[name].yml,其中name是你所使用的theme的名字，这里我用的NexT主题，所以我命名为_config.next.yml. 然后打开themes/next/_config.yml,针对需要改动的配置，复制到新建的_config.next.yml. 在生成的时候，Hexo会将_config.next.yml中的配置覆盖主题源文件中的默认配置。 <div class="note primary"><p>这里我不建议直接全部复制再改，因为这样可以更方便看到自己做的哪些修改。</p>
@@ -438,7 +438,7 @@ git push -u origin master</code></pre>
 <li><p>打开黑暗模式</p>
 <pre><code>  darkmode: true</code></pre></li>
 <li><p>设置网页标签小图标</p>
-<p>在Hexo/Source目录里新建一个文件夹，起名Site_Assets.然后放入自己想要的图片（可以到<span class="exturl" data-url="aHR0cHM6Ly9yZWFsZmF2aWNvbmdlbmVyYXRvci5uZXQv">Favicon Generator<i class="fa fa-external-link-alt"></i></span>预览生成适用格式）。 这里假设我的图片是mylogo.png</p>
+<p>在Hexo/Source目录里新建一个文件夹，起名Site_Assets.然后放入自己想要的图片（可以到<a href="https://realfavicongenerator.net/">Favicon Generator</a>预览生成适用格式）。 这里假设我的图片是mylogo.png</p>
 <pre><code>  favicon:
     small: /Site_Assets/mylogo.png
     medium: /Site_Assets/mylogo.png
@@ -520,7 +520,7 @@ git push -u origin master</code></pre>
 <pre><code>  related_posts:
     enable: true</code></pre></li>
 <li><p>文章中代码显示设置</p>
-<p>根据喜好设置显示代码外观，可以到<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9oaWdobGlnaHQv">https://theme-next.js.org/highlight/<i class="fa fa-external-link-alt"></i></span>预览选择喜欢的样式</p>
+<p>根据喜好设置显示代码外观，可以到<a href="https://theme-next.js.org/highlight/" class="uri">https://theme-next.js.org/highlight/</a>预览选择喜欢的样式</p>
 <pre><code>  codeblock:
     # Code Highlight theme
     # All available themes: https://theme-next.js.org/highlight/
@@ -580,14 +580,14 @@ git push -u origin master</code></pre>
 <p>因为hexo-renderer-marked实现的LaTex与MarkDown有语法冲突，这里改成用hexo-renderer-pandoc：</p>
 <pre><code>      $ npm un hexo-renderer-marked
       $ npm i hexo-renderer-pandoc</code></pre>
-<p>使用公式的语法，参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL21hdGgtZXF1YXRpb25zLmh0bWw=">https://theme-next.js.org/docs/third-party-services/math-equations.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>使用公式的语法，参考<a href="https://theme-next.js.org/docs/third-party-services/math-equations.html" class="uri">https://theme-next.js.org/docs/third-party-services/math-equations.html</a></p>
 <p>使用公式的时候，不要忘记在文章front matter部分加上</p>
 <pre><code>      mathjax: true</code></pre>
 <ul>
 <li><p>评论系统</p>
 <p>个人是希望可以自己持有留言数据和邮件通知。目前没有一个比较好的免费方案。这里我就使用了LiveRe和gitchat。</p>
-<p>详情参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoaXJkLXBhcnR5LXNlcnZpY2VzL2NvbW1lbnRzLmh0bWw=">https://theme-next.js.org/docs/third-party-services/comments.html<i class="fa fa-external-link-alt"></i></span></p>
-<p>增加waline。参考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xpemhlbWluZy93YWxpbmUvdHJlZS9tYXN0ZXIvcGFja2FnZXMvaGV4by1uZXh0">安装<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnLw==">教程<i class="fa fa-external-link-alt"></i></span></p></li>
+<p>详情参考<a href="https://theme-next.js.org/docs/third-party-services/comments.html" class="uri">https://theme-next.js.org/docs/third-party-services/comments.html</a></p>
+<p>增加waline。参考<a href="https://github.com/lizheming/waline/tree/master/packages/hexo-next">安装</a>和<a href="https://waline.js.org/">教程</a></p></li>
 <li><p>访客计数</p>
 <p><figure class="highlight yml"><figcaption><span>yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br></pre></td></tr></table></figure></p></li>
 <li><p>搜索</p></li>
@@ -601,7 +601,7 @@ git push -u origin master</code></pre>
 <p>我开启了 Pjax，lazyload，pangu 和 quicklink。</p></li>
 </ul></li>
 <li><p>Tag语法</p>
-<p>相关的写法和设置参考<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RhZy1wbHVnaW5zLw==">https://theme-next.js.org/docs/tag-plugins/<i class="fa fa-external-link-alt"></i></span></p></li>
+<p>相关的写法和设置参考<a href="https://theme-next.js.org/docs/tag-plugins/" class="uri">https://theme-next.js.org/docs/tag-plugins/</a></p></li>
 </ul>
 <h1 id="魔改美化">魔改美化</h1>
 <p>对于Hexo和Next自带的设置暂告一段落了。我发现博客还是有点丑哎。所以这里我记录一下我在Next可提供的设置外做的一些改动。</p>
@@ -692,7 +692,7 @@ git push -u origin master</code></pre>
 <p>安装插件</p>
 <pre><code>npm install hexo-douban --save</code></pre>
 <p>在主题配置文件设置 <figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">douban:</span></span><br><span class="line">  <span class="attr">user:</span> <span class="string">mythsman</span></span><br><span class="line">  <span class="attr">builtin:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">book:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my book title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my book quote&#x27;</span></span><br><span class="line">  <span class="attr">movie:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my movie title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my movie quote&#x27;</span></span><br><span class="line">  <span class="attr">game:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my game title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my game quote&#x27;</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL215dGhzbWFuL2hleG8tZG91YmFu">详查<i class="fa fa-external-link-alt"></i></span></p>
+<p><a href="https://github.com/mythsman/hexo-douban">详查</a></p>
 ]]></content>
       <categories>
         <category>Blog</category>

@@ -6,28 +6,24 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.3.0">
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/Site_Assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/Site_Assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/Site_Assets/favicon/favicon-16x16.png">
   <link rel="mask-icon" href="/Site_Assets/favicon/safari-pinned-tab.svg" color="#222">
-  <meta name="google-site-verification" content="lwLR2xPT2oXktmIF3rD_aXmyEoloPzGururLg1tlizg">
-  <meta name="msvalidate.01" content="CDBE5795F5A25C97765DFD9BFFDE1D5F">
-  <meta name="yandex-verification" content="c3662b6ec711e94f">
-  <meta name="baidu-site-verification" content="ltJ7yNDAKP">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
-  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":true,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"carrion.cc","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="介绍编写博客文章的一下语法和设置。">
 <meta property="og:type" content="article">
@@ -61,32 +57,7 @@
 </script>
 <title>博客写作语法备忘 | Carrion's Blog</title>
   
-    <script>
-      function sendPageView() {
-        if (CONFIG.hostname !== location.hostname) return;
-        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
-        localStorage.setItem('uid', uid);
-        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
-          v  : 1,
-          tid: 'UA-165315238-1',
-          cid: uid,
-          t  : 'pageview',
-          dp : encodeURIComponent(location.pathname)
-        }));
-      }
-      document.addEventListener('pjax:complete', sendPageView);
-      sendPageView();
-    </script>
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?c4c6869b2a303ca7b56b222d55c8e68e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -259,7 +230,7 @@
   </nav>
 </div>
   <div class="cc-license site-overview-item animated" itemprop="license">
-    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -279,7 +250,6 @@
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -493,14 +463,14 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[显示文本](网址 &quot;放置显示文本&quot;) </span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">显示链接[Google](http:&#x2F;&#x2F;google.com&#x2F; &quot;谷歌&quot;) </span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 <p>示例渲染结果：</p>
 <blockquote>
-<p>显示链接<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></p>
+<p>显示链接<a target="_blank" rel="noopener" href="http://google.com/" title="谷歌">Google</a></p>
 </blockquote></li>
 <li><p><strong>参考式</strong>:</p>
 <p>参考式分两部分组成，一部分是写在文本行内，另一部分是在任意地方写好详细地址说明等。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">放在正文中：</span><br><span class="line">[显示文本][索引标签]</span><br><span class="line"></span><br><span class="line">放在任意处：</span><br><span class="line">[索引标签]: 网址 &quot;Title&quot;&#x2F;(Title)</span><br><span class="line"></span><br><span class="line">索引标签如果为空,第二个[]不可省略，并且解释处索引标签使用显示文本的内容。</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">有3个搜索引擎，分别是[Google][1],[Bing][ms]和[百度][]。</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 <p>渲染结果：</p>
 <blockquote>
-<p>有3个搜索引擎，分别是<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>,<span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>有3个搜索引擎，分别是<a target="_blank" rel="noopener" href="http://google.com/" title="推荐">Google</a>,<a target="_blank" rel="noopener" href="http://bing.com/" title="推荐">Bing</a>和<a target="_blank" rel="noopener" href="http://baidu.com/" title="不推荐">百度</a>。</p>
 </blockquote>
 <p>网址支持相对路径和本页索引：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[相对](&#x2F;docs&#x2F;) </span><br><span class="line">[跳转](#反斜杠)</span><br></pre></td></tr></table></figure>
@@ -516,7 +486,7 @@
 <p>目前这种方式不支持图片显示大小自定义.</p>
 <p>点击图片跳转: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[![AAA](&#x2F;assets&#x2F;pikaQ.png)](#反斜杠)</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <a href="#反斜杠"><img data-src="/Site_Assets/favicon/favicon-32x32.png" alt="AAA" /></a></p>
 <h2 id="自动链接">自动链接</h2>
-<p>直接在网址/邮箱用&lt;&gt;包围,一般用于邮箱: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;Google.com&#x2F;&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">http://Google.com/<i class="fa fa-external-link-alt"></i></span> &gt; <span class="exturl" data-url="bWFpbHRvOmFkZHJlc3NAZXhhbXBsZS5jb20=">address@example.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>直接在网址/邮箱用&lt;&gt;包围,一般用于邮箱: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:&#x2F;&#x2F;Google.com&#x2F;&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure> 渲染结果: &gt; <a target="_blank" rel="noopener" href="http://Google.com/" class="uri">http://Google.com/</a> &gt; <a href="mailto:address@example.com" class="email">address@example.com</a></p>
 <p>主要用于邮箱,因为上面这个邮箱地址在网页源码中会是</p>
 <pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; </code></pre>
 <p>一定程度上避免程序读取然后发垃圾邮件给你.</p>
@@ -538,7 +508,7 @@
 <p>在3个<code>`</code>的情况下,可以设置语言种类高亮等:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96; [language] [title] [url] [link text] </span><br><span class="line">code snippet </span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;json json http:&#x2F;&#x2F;Google.com&#x2F; Google</span><br><span class="line">&#123;</span><br><span class="line">  &quot;firstName&quot;: &quot;John&quot;,</span><br><span class="line">  &quot;lastName&quot;: &quot;Smith&quot;,</span><br><span class="line">  &quot;age&quot;: 25</span><br><span class="line">&#125;</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-<p>渲染结果: &gt; <figure class="highlight json"><figcaption><span>json</span><span class="exturl" data-url="aHR0cDovL0dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> ## 表格</p>
+<p>渲染结果: &gt; <figure class="highlight json"><figcaption><span>json</span><a target="_blank" rel="noopener" href="http://Google.com/">Google</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> ## 表格</p>
 <p>可以通过制表符按一定格式编写数据,自动生成表格: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">| Title0    	| title1 		|</span><br><span class="line">| 对齐设置 	    | 对齐设置 	    |</span><br><span class="line">| Data0	    	| Data1 		|</span><br><span class="line">| Data0	    	| Data1  		|</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">| Syntax      | Description | SubDesc	 |</span><br><span class="line">| :---------- | :---------: | ---------: |</span><br><span class="line">| *Header*    | _Title_     | &#96;Title&#96;    |</span><br><span class="line">| [Google][1] | [Bing][ms]  | [百度][]	 |</span><br><span class="line"></span><br><span class="line">[microsoft]: http:&#x2F;&#x2F;bing.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F; &quot;推荐&quot;</span><br><span class="line">[百度]: http:&#x2F;&#x2F;baidu.com&#x2F; (不推荐)</span><br></pre></td></tr></table></figure> 渲染结果:</p>
 <blockquote>
 <table>
@@ -556,14 +526,14 @@
 <td style="text-align: right;"><code>Title</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span></td>
-<td style="text-align: center;"><span class="exturl" data-url="aHR0cDovL2JpbmcuY29tLw==">Bing<i class="fa fa-external-link-alt"></i></span></td>
-<td style="text-align: right;"><span class="exturl" data-url="aHR0cDovL2JhaWR1LmNvbS8=">百度<i class="fa fa-external-link-alt"></i></span></td>
+<td style="text-align: left;"><a target="_blank" rel="noopener" href="http://google.com/" title="推荐">Google</a></td>
+<td style="text-align: center;"><a target="_blank" rel="noopener" href="http://bing.com/" title="推荐">Bing</a></td>
+<td style="text-align: right;"><a target="_blank" rel="noopener" href="http://baidu.com/" title="不推荐">百度</a></td>
 </tr>
 </tbody>
 </table>
 </blockquote>
-<p>嫌太麻烦?可以去<span class="exturl" data-url="aHR0cHM6Ly93d3cudGFibGVzZ2VuZXJhdG9yLmNvbS9tYXJrZG93bl90YWJsZXM=">Markdown Tables Generator<i class="fa fa-external-link-alt"></i></span>生成然后复制进文章.</p>
+<p>嫌太麻烦?可以去<a target="_blank" rel="noopener" href="https://www.tablesgenerator.com/markdown_tables">Markdown Tables Generator</a>生成然后复制进文章.</p>
 <h2 id="角标">角标</h2>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[^标识]</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">角标示例,角标[^1]和角标[^aa]</span><br><span class="line">[^1]: 第一个</span><br><span class="line">[^aa]: 第二个</span><br></pre></td></tr></table></figure>
 <p>渲染结果: &gt; 角标示例,角标[^1]和角标[^aa] [^1]: 第一个 [^aa]: 第二个</p>
@@ -573,7 +543,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line"></span><br><span class="line">content</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
 <p>别名: <strong>quote</strong></p>
 <p>示例: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote Seth Godin http:&#x2F;&#x2F;sethgodin.typepad.com&#x2F;seths_blog&#x2F;2009&#x2F;07&#x2F;welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line"></span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line"></span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure> <blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><span class="exturl" data-url="aHR0cDovL3NldGhnb2Rpbi50eXBlcGFkLmNvbS9zZXRoc19ibG9nLzIwMDkvMDcvd2VsY29tZS10by1pc2xhbmQtbWFya2V0aW5nLmh0bWw=">Welcome to Island Marketing<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote></p>
+<footer><strong>Seth Godin</strong><cite><a target="_blank" rel="noopener" href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote></p>
 <h2 id="代码块-1">代码块</h2>
 <pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;    
 	code snippet    
@@ -585,7 +555,7 @@
 	=> [1, 2, 3]
 	&#123;% endcodeblock %&#125;</code></pre>
 <blockquote>
-<figure class="highlight javascript"><figcaption><span>_.compact</span><span class="exturl" data-url="aHR0cDovL3VuZGVyc2NvcmVqcy5vcmcvI2NvbXBhY3Q=">Underscore.js<i class="fa fa-external-link-alt"></i></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">&#x27;&#x27;</span>, <span class="number">3</span>]);  </span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  </span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>_.compact</span><a target="_blank" rel="noopener" href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">&#x27;&#x27;</span>, <span class="number">3</span>]);  </span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  </span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>对于额外选项,</p>
 <table>
@@ -626,7 +596,7 @@
 <pre><code>&#123;% link text url [external] [title] %&#125;  
 示例:  
 &#123;% link Google http://google.com %&#125;</code></pre>
-<span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20v">Google<i class="fa fa-external-link-alt"></i></span>
+<a href="http://google.com/" title="" target="">Google</a>
 <h2 id="图片-1">图片</h2>
 <p>可以指定大小.</p>
 <pre><code>&#123;% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %&#125;
@@ -687,13 +657,13 @@ no-icon: 加了这个标识就不显示图标</code></pre>
 <h2 id="按钮">按钮</h2>
 <p>参考<a href="/docs/tag-plugins/button.html">Button</a></p>
 <h2 id="图表">图表</h2>
-<p>参考<span class="exturl" data-url="aHR0cHM6Ly9lY2hhcnRzLmFwYWNoZS5vcmcvZXhhbXBsZXMvaW5kZXguaHRtbA==">官方<i class="fa fa-external-link-alt"></i></span></p>
+<p>参考<a target="_blank" rel="noopener" href="https://echarts.apache.org/examples/index.html">官方</a></p>
 <h2 id="数学公式">数学公式</h2>
-<p>使用的是Mathjax。 参考<a href="/docs/third-party-services/math-equations">标签用法</a>.参考<span class="exturl" data-url="aHR0cHM6Ly93d3cuenlidWx1by5jb20va25pZ2h0L25vdGUvOTYwOTM=">公式写法<i class="fa fa-external-link-alt"></i></span> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;equation&#125; \label&#123;eq1&#125;</span><br><span class="line">e&#x3D;mc^2</span><br><span class="line">\end&#123;equation&#125;$$</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <span class="math display">\[\begin{equation} \label{eq1}
+<p>使用的是Mathjax。 参考<a href="/docs/third-party-services/math-equations">标签用法</a>.参考<a target="_blank" rel="noopener" href="https://www.zybuluo.com/knight/note/96093">公式写法</a> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;equation&#125; \label&#123;eq1&#125;</span><br><span class="line">e&#x3D;mc^2</span><br><span class="line">\end&#123;equation&#125;$$</span><br></pre></td></tr></table></figure> 渲染结果： &gt; <span class="math display">\[\begin{equation} \label{eq1}
 &gt; e=mc^2
 &gt; \end{equation}\]</span></p>
 <h2 id="emoji">Emoji</h2>
-<p>在文章中::中间写入emoji名称,即可显示,同时也支持标签形式.<span class="exturl" data-url="aHR0cHM6Ly93d3cud2ViZnguY29tL3Rvb2xzL2Vtb2ppLWNoZWF0LXNoZWV0Lw==">Emojis列表参考<i class="fa fa-external-link-alt"></i></span></p>
+<p>在文章中::中间写入emoji名称,即可显示,同时也支持标签形式.<a target="_blank" rel="noopener" href="https://www.webfx.com/tools/emoji-cheat-sheet/">Emojis列表参考</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:heartpulse: :smile: :black_nib: </span><br><span class="line">&#123;% github_emoji heartpulse %&#125;&#123;% github_emoji smile %&#125;&#123;% github_emoji black_nib %&#125;</span><br></pre></td></tr></table></figure>
 <p>渲染结果:</p>
 <div class="note warning no-icon"><p>存在bug,等待解决.</p>
@@ -741,7 +711,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
       <a href="https://carrion.cc/20210201/7a023ac39f7f" title="博客写作语法备忘">https://carrion.cc/20210201/7a023ac39f7f</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
   </li>
 </ul>
 </div>
@@ -869,7 +839,7 @@ no-icon: 加了这个标识就不显示图标</code></pre>
       </span>
     </span>
 </div>
-  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 <div id="binft"></div>
   <script>
@@ -925,10 +895,10 @@ WIDGET = {FID: 'qkirnDlRXw'}
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 <script src="/js/local-search.js"></script>
@@ -985,7 +955,7 @@ WIDGET = {FID: 'qkirnDlRXw'}
       }
     };
     const script = document.createElement('script');
-    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
     script.defer = true;
     document.head.appendChild(script);
   } else {
@@ -997,33 +967,23 @@ WIDGET = {FID: 'qkirnDlRXw'}
 </script>
 
 
-  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
-  <script>
-      window.addEventListener('load', () => {
-      quicklink.listen({
-        timeout : 3000,
-        priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://carrion.cc/20210201/7a023ac39f7f.html',]
-      });
-      });
-  </script>
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
     new Waline(Object.assign({
       lang: 'en'
-    }, {"enable":true,"serverURL":"https://carrionblog.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
+    }, {"enable":true,"serverURL":"https://carion-blog-comment.vercel.app/","placeholder":"有错误帮我指出一下吧~","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":null,"libUrl":null}, {
       el: '#waline-comments',
       path: "/20210201/7a023ac39f7f",
     }));
   }, window.Waline);
 });
 </script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
 
 <script>
 NexT.utils.loadComments('.gitalk-container', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
     var gitalk = new Gitalk({
       clientID    : '225d92ba1215991aee70',
       clientSecret: 'ebece39c0c6a6308f58f270fed911e508125f608',
@@ -1031,7 +991,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       owner       : 'CCCarrion',
       admin       : ['CCCarrion'],
       id          : 'd935229383750fb188af33173d350471',
-        language: '',
+        language: 'zh-CN',
       distractionFreeMode: true
     });
     gitalk.render(document.querySelector('.gitalk-container'));
